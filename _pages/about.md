@@ -15,19 +15,19 @@ I am a :mortar_board: CS graduate student pursuing a double master's degree at *
 ## :books: Education  
 
 ### :mortar_board: Georgia Institute of Technology  
-:round_pushpin: *Atlanta, GA, USA :us:*  
+:round_pushpin: *Atlanta, GA, :us:*  
 **MSc in Computer Science**  
-📅 *Jan 2024 -- May 2025 (expected)*  
+*Jan 2024 -- May 2025 (expected)*  
 
 ### :mortar_board: University of Technology of Compiègne (UTC)  
-:round_pushpin: *Compiègne, France :fr:*  
+:round_pushpin: *Compiègne, :fr:*  
 **MEng in Computer Science**  
-📅 *Sep 2019 -- Jan 2025 (expected)*  
+*Sep 2019 -- Jan 2025 (expected)*  
 
 ### :airplane: Politecnico di Milano  
-:round_pushpin: *Milan, Italy :it:*  
-**University Exchange in the Computer Systems Engineering Department**  
-📅 *Feb -- Jul 2021*  
+:round_pushpin: *Milan, :it:*  
+**Visiting Student in the Computer Systems Engineering Department**  
+*Feb -- Jul 2021*  
 
 ---
 
@@ -41,7 +41,7 @@ I am a :mortar_board: CS graduate student pursuing a double master's degree at *
 - 🚀 **Main mission:** Motor Neural Data Spiking Decoding.  
 
 ### 🤖 [Heudiasyc Lab -- UMR-CNRS 7253](https://www.hds.utc.fr/en/)  
-📍 *Compiègne, France 🇫🇷*  
+📍 *Compiègne, :fr:*  
 **Graduate Research Assistant**  
 👨‍🏫 Supervised by [Prof. Julien Moreau](https://www.hds.utc.fr/~moreajul/dokuwiki/) & [Prof. Philippe Xu](https://perso.ensta-paris.fr/~philippe.xu/)  
 📅 *Sep -- Dec 2023*  
@@ -52,14 +52,14 @@ I am a :mortar_board: CS graduate student pursuing a double master's degree at *
 ## 💼 Industry Experience  
 
 ### 🎵 [Deezer](https://www.deezer.com/)  
-📍 *Paris, France 🇫🇷*  
+📍 *Paris, France :fr:*  
 **Machine Learning Engineer Intern**  
 👨‍🏫 Supervised by [Théo Bontempelli](https://scholar.google.com/citations?user=7wlFpDwAAAAJ&hl)  
 📅 *Jun -- Nov 2024*  
 - 🚀 **Main mission:** **Modeling User Musical Tastes 🎧 using Transformers** in a **Large-Scale Environment**.  
 
 ### ☁️ [Wise Systems](https://www.wisesystems.com/)  
-📍 *Montreal, Canada 🇨🇦*  
+📍 *Montreal, Canada :ca:*  
 **Cloud Engineer Intern**  
 📅 *Sep 2022 -- Feb 2023*  
 - ⚙️ **Main mission:** **CI/CD Improvements 🚀** of the **IaC (Infrastructure as Code)** Deployed with Terraform.  
