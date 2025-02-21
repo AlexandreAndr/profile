@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Alexandre ANDRE"
+title                    : "About Me"
 title_separator          : "-"
 name                     : &name "Alexandre ANDRE"
 description              : &description "My personal description"
@@ -25,7 +25,7 @@ author:
   avatar           : "profile.jpg"
   name             : "Alexandre (Alex) ANDRE"
   pronouns         : # example: "she/her"  
-  bio              : "NeuroAI @NerDS Lab <br> CS Grad @ GT"
+  bio              : "NeuroAI @NerDS Lab <br>CS Grad @ GT"
   location         : "Atlanta, USA"
   employer         : "Georgia Tech"
   uri              : # URL
