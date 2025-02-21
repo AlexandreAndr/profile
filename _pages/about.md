@@ -22,12 +22,12 @@ I am a CS graduate student at **Georgia Tech** with a main resaerch interest in 
 ## :microscope: Research Experience  
 
 ### :brain: [NerDS Lab](https://dyerlab.gatech.edu/)  
-**Graduate Research Assistant**, Atlanta, :us:, *Oct 2024 -- May 2025*  
+**Graduate Research Assistant**, Atlanta :us:, *Oct 2024 -- May 2025*  
 Supervised by [Prof. Eva L. Dyer](https://scholar.google.com/citations?user=Sb_jcHcAAAAJ&hl)  
 - **Main mission:** Motor Neural Data Spiking Decoding.
 
 ### :round_pushpin: [Heudiasyc Lab -- UMR-CNRS 7253](https://www.hds.utc.fr/en/)  
-**Graduate Research Assistant**, Compiègne, :fr:, *Sep -- Dec 2023*  
+**Graduate Research Assistant**, Compiègne :fr:, *Sep -- Dec 2023*  
 Supervised by [Prof. Julien Moreau](https://www.hds.utc.fr/~moreajul/dokuwiki/) & [Prof. Philippe Xu](https://perso.ensta-paris.fr/~philippe.xu/)  
 - **Main mission:** Localization Prediction in a Weakly Supervised Setting.  
 
@@ -36,11 +36,11 @@ Supervised by [Prof. Julien Moreau](https://www.hds.utc.fr/~moreajul/dokuwiki/) 
 ## :briefcase: Industry Experience  
 
 ### 🎵 [Deezer](https://www.deezer.com/)  
-**Machine Learning Engineer Intern**, Paris, :fr:, *Jun -- Nov 2024*  
+**Machine Learning Engineer Intern**, Paris :fr:, *Jun -- Nov 2024*  
 Supervised by [Théo Bontempelli](https://scholar.google.com/citations?user=7wlFpDwAAAAJ&hl)  
 -  **Main mission:** **Modeling User Musical Tastes using Transformers** in a **Large-Scale Environment**.  
 
 ### ☁️ [Wise Systems](https://www.wisesystems.com/)  
-**Cloud Engineer Intern**, Montreal, :ca:, *Sep 2022 -- Feb 2023*
+**Cloud Engineer Intern**, Montreal :canada:, *Sep 2022 -- Feb 2023*
 Supervised by [Clément Contini](https://www.linkedin.com/in/clement-contini/?locale=en_US)
 - **Main mission:** **CI/CD Improvements ** of the **IaC (Infrastructure as Code)** Deployed with Terraform.  
