@@ -13,8 +13,10 @@ I am a :mortar_board: CS graduate student pursuing a double master's degree at *
 ---
 
 ## :classical_building: Education  
-:mortar_board: **MSc in Computer Science**, Georgia Tech :us: *Jan 2024 – Jul 2025 (expected)*
-:mortar_board: **MEng in Computer Science**, University of Technology of Compiègne (UTC) :fr:, *Sep 2019 -- Feb 2025*  
+:mortar_board: **MSc in Computer Science**, Georgia Tech :us: *Jul 2025 (expected)*
+
+:mortar_board: **MEng in Computer Science**, Université de technologie de Compiègne :fr:, *Feb 2025*  
+
 :airplane: **Visiting Student**, Politecnico di Milano :it:, *Feb -- Jul 2021*  
 
 ---
