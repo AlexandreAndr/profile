@@ -45,7 +45,7 @@ Supervised by [Prof. Eva L. Dyer](https://scholar.google.com/citations?user=Sb_j
 **Graduate Research Assistant**  
 Supervised by [Prof. Julien Moreau](https://www.hds.utc.fr/~moreajul/dokuwiki/) & [Prof. Philippe Xu](https://perso.ensta-paris.fr/~philippe.xu/)  
 *Sep -- Dec 2023*  
-- **Main mission:** Localization Prediction with **Centimeter-Level Accuracy 📍** in a **Weakly Supervised Setting**.  
+- **Main mission:**Localization Prediction in a Weakly Supervised Setting. **.  
 
 ---
 
@@ -63,8 +63,3 @@ Supervised by [Théo Bontempelli](https://scholar.google.com/citations?user=7wlF
 **Cloud Engineer Intern**  
 *Sep 2022 -- Feb 2023*  
 - **Main mission:** **CI/CD Improvements ** of the **IaC (Infrastructure as Code)** Deployed with Terraform.  
-
----
-<!-- 
-## 📄 My Resume  
-📥 [Download My Resume](https://github.com/AlexandreAndr/profile/raw/main/Alexandre_ANDRE_CV.pdf)   -->
