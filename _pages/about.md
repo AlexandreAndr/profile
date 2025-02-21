@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 
-I am a :mortar_board: CS graduate student pursuing a double master's degree at **Georgia Tech** and **UTC**, with a strong interest in **NeuroAI :brain:**. My research focuses on **sequence modeling, time series transformers**, and their applications, such as **music recommendation 🎵** and **neural decoding**.  
+I am a CS graduate student at **Georgia Tech** with a main resaerch interest in **NeuroAI**. My research focuses on **sequence modeling, from time series transformers to state space models**, and their applications, such as **music recommendation** and **neural decoding**.  
 
 ---
 
