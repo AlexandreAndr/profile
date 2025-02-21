@@ -1,3 +1,5 @@
+![Your Alt Text](https://github.com/AlexandreAndr/profile/raw/main/profile.jpg)
+
 # Alexandre ANDRE  
 
 I am a 🎓 CS graduate student pursuing a double master's degree at **Georgia Tech** and **UTC**, with a strong interest in **NeuroAI 🧠🤖**. My research focuses on **sequence modeling, time series transformers**, and their applications, such as **music recommendation 🎵** and **neural decoding**.  
