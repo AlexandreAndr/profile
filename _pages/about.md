@@ -12,12 +12,9 @@ I am a :mortar_board: CS graduate student pursuing a double master's degree at *
 
 ---
 
-## :books: Education  
+## :classical_building: Education  
 
-### :mortar_board: Georgia Institute of Technology  
-:round_pushpin: *Atlanta, :us:*  
-**MSc in Computer Science**  
-*Jan 2024 -- May 2025 (expected)*  
+### :mortar_board: Georgia Tech :us: **MSc in Computer Science**, *Jan 2024 -- May 2025 (expected)*  
 
 ### :mortar_board: University of Technology of Compiègne (UTC)  
 :round_pushpin: *Compiègne, :fr:*  
