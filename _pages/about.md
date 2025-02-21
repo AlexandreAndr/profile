@@ -13,7 +13,6 @@ I am a :mortar_board: CS graduate student pursuing a double master's degree at *
 ---
 
 ## :classical_building: Education  
-
 :mortar_board: **MSc in Computer Science**, Georgia Tech :us: *Jan 2024 – Jul 2025 (expected)*
 :mortar_board: **MEng in Computer Science**, University of Technology of Compiègne (UTC) :fr:, *Sep 2019 -- Feb 2025*  
 :airplane: **Visiting Student**, Politecnico di Milano :it:, *Feb -- Jul 2021*  
@@ -23,18 +22,14 @@ I am a :mortar_board: CS graduate student pursuing a double master's degree at *
 ## :microscope: Research Experience  
 
 ### :brain: [NerDS Lab](https://dyerlab.gatech.edu/)  
-*Atlanta, :us:*  
-**Graduate Research Assistant**  
+**Graduate Research Assistant**, Atlanta, :us:, *Oct 2024 -- May 2025*  
 Supervised by [Prof. Eva L. Dyer](https://scholar.google.com/citations?user=Sb_jcHcAAAAJ&hl)  
-*Oct 2024 -- May 2025*  
-- **Main mission:** Motor Neural Data Spiking Decoding.  
+- **Main mission:** Motor Neural Data Spiking Decoding.
 
-### :map: [Heudiasyc Lab -- UMR-CNRS 7253](https://www.hds.utc.fr/en/)  
-*Compiègne, :fr:*  
-**Graduate Research Assistant**  
+### :round_pushpin: [Heudiasyc Lab -- UMR-CNRS 7253](https://www.hds.utc.fr/en/)  
+**Graduate Research Assistant**, Compiègne, :fr:, *Sep -- Dec 2023*  
 Supervised by [Prof. Julien Moreau](https://www.hds.utc.fr/~moreajul/dokuwiki/) & [Prof. Philippe Xu](https://perso.ensta-paris.fr/~philippe.xu/)  
-*Sep -- Dec 2023*  
-- **Main mission:**Localization Prediction in a Weakly Supervised Setting. **.  
+- **Main mission:** Localization Prediction in a Weakly Supervised Setting.  
 
 ---
 
