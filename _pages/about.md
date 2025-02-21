@@ -10,14 +10,12 @@ redirect_from:
 I am a graduate student in Computer Science at **Georgia Tech**, specializing in **NeuroAI** with a focus on **sequence modeling**. My research interests span across **time series transformers**, **state space models**, and their applications, including **music recommendation** and **neural decoding**. Prior to this, I obtained a degree in Computer Science at Université de technologie de Compiègne and gained industry experience with large-scale datasets and applications as an intern at Deezer.
 
 ---
-
 ## :classical_building: Education  
 :mortar_board: **MSc in Computer Science**, Georgia Tech :us:, *2025 (expected)*  
 :mortar_board: **MEng in Computer Science**, Université de technologie de Compiègne :fr:, *2025*  
 :airplane: **Visiting Student**, Politecnico di Milano :it:, *Spring 2021*  
 
 ---
-
 ## :microscope: Research Experience
 :brain: **[NerDS Lab](https://dyerlab.gatech.edu/)**, **Graduate Research Assistant**, Atlanta :us:, *Spring 2025*  
 Main mission: Motor Neural Data Spiking Decoding with Self-Supervised Learning.  
@@ -28,7 +26,6 @@ Main mission: Localization Prediction in a Weakly Supervised Setting.
 *Supervised by [Prof. Julien Moreau](https://www.hds.utc.fr/~moreajul/dokuwiki/) & [Prof. Philippe Xu](https://perso.ensta-paris.fr/~philippe.xu/)*
 
 ---
-
 ## :briefcase: Industry Experience
 :musical_note: **[Deezer](https://www.deezer.com/)**, **Machine Learning Engineer Intern**, Paris :fr:, *Fall 2024*  
 Main mission: User Modeling Leveraging Transformers in a Large-Scale Environment.  
