@@ -1,6 +1,6 @@
 # Alexandre ANDRE
 
-I am a CS graduate student pursuing a double master's degree at Georgia Tech and UTC, and my main area of interest is NeuroAI. My research involves sequence modeling, time series transformers, and their applications, including music recommendation and neural population decoding.
+I am a CS graduate student pursuing a double master's degree at Georgia Tech and UTC, and my main area of interest is NeuroAI. My research involves sequence modeling, time series transformers, and their applications, including music recommendation and neural decoding.
 
 ---
 
