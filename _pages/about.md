@@ -14,16 +14,9 @@ I am a :mortar_board: CS graduate student pursuing a double master's degree at *
 
 ## :classical_building: Education  
 
-### :mortar_board: Georgia Tech :us: **MSc in Computer Science** · *Jan 2024 – May 2025 (expected)*
-### :mortar_board: University of Technology of Compiègne (UTC)  
-:round_pushpin: *Compiègne, :fr:*  
-**MEng in Computer Science**  
-*Sep 2019 -- Jan 2025 (expected)*  
-
-### :airplane: Politecnico di Milano  
-:round_pushpin: *Milan, :it:*  
-**Visiting Student in the Computer Systems Engineering Department**  
-*Feb -- Jul 2021*  
+### :mortar_board: MSc in Computer Science, Georgia Tech :us: · *Jan 2024 – Jul 2025 (expected)*
+### :mortar_board: MEng in Computer Science, University of Technology of Compiègne (UTC) :fr: · *Sep 2019 -- Feb 2025*  
+### :airplane: Visiting Student, Politecnico di Milano  :it: · *Feb -- Jul 2021*  
 
 ---
 
