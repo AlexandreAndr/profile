@@ -57,3 +57,6 @@ I am a CS graduate student pursuing a double master's degree at Georgia Tech and
 - **Main mission:** CI/CD Improvements of the IaC (Infrastructure as Code) Deployed with Terraform.  
 
 ---
+
+## My Resume
+[Download My Resume](https://github.com/AlexandreAndr/profile/raw/main/Alexandre_ANDRE_CV.pdf)
