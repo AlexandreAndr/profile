@@ -34,7 +34,7 @@ Main mission: Localization Prediction in a Weakly Supervised Setting.
 ## :briefcase: Industry Experience
 :musical_note: **[Deezer](https://www.deezer.com/)**  
 **Machine Learning Engineer Intern**, Paris :fr:, *Fall 2024*  
-Main mission: User Modeling leveraging Transformers in a Large-Scale Environment.  
+Main mission: User Modeling Leveraging Transformers in a Large-Scale Environment.  
 *Supervised by [Théo Bontempelli](https://scholar.google.com/citations?user=7wlFpDwAAAAJ&hl)*
 
 :cloud: **[Wise Systems](https://www.wisesystems.com/)**  
