@@ -15,7 +15,7 @@ I am a :mortar_board: CS graduate student pursuing a double master's degree at *
 ## :books: Education  
 
 ### :mortar_board: Georgia Institute of Technology  
-:round_pushpin: *Atlanta, GA, :us:*  
+:round_pushpin: *Atlanta, :us:*  
 **MSc in Computer Science**  
 *Jan 2024 -- May 2025 (expected)*  
 
@@ -31,38 +31,38 @@ I am a :mortar_board: CS graduate student pursuing a double master's degree at *
 
 ---
 
-## 🔬 Research Experience  
+## :microscope: Research Experience  
 
 ### :brain: [NerDS Lab](https://dyerlab.gatech.edu/)  
-📍 *Atlanta, GA, USA :us:*  
+*Atlanta, :us:*  
 **Graduate Research Assistant**  
-👨‍🏫 Supervised by [Prof. Eva L. Dyer](https://scholar.google.com/citations?user=Sb_jcHcAAAAJ&hl)  
-📅 *Oct 2024 -- May 2025*  
-- 🚀 **Main mission:** Motor Neural Data Spiking Decoding.  
+Supervised by [Prof. Eva L. Dyer](https://scholar.google.com/citations?user=Sb_jcHcAAAAJ&hl)  
+*Oct 2024 -- May 2025*  
+- **Main mission:** Motor Neural Data Spiking Decoding.  
 
-### 🤖 [Heudiasyc Lab -- UMR-CNRS 7253](https://www.hds.utc.fr/en/)  
-📍 *Compiègne, :fr:*  
+### :map: [Heudiasyc Lab -- UMR-CNRS 7253](https://www.hds.utc.fr/en/)  
+*Compiègne, :fr:*  
 **Graduate Research Assistant**  
-👨‍🏫 Supervised by [Prof. Julien Moreau](https://www.hds.utc.fr/~moreajul/dokuwiki/) & [Prof. Philippe Xu](https://perso.ensta-paris.fr/~philippe.xu/)  
-📅 *Sep -- Dec 2023*  
-- 📡 **Main mission:** Localization Prediction with **Centimeter-Level Accuracy 📍** in a **Weakly Supervised Setting**.  
+Supervised by [Prof. Julien Moreau](https://www.hds.utc.fr/~moreajul/dokuwiki/) & [Prof. Philippe Xu](https://perso.ensta-paris.fr/~philippe.xu/)  
+*Sep -- Dec 2023*  
+- **Main mission:** Localization Prediction with **Centimeter-Level Accuracy 📍** in a **Weakly Supervised Setting**.  
 
 ---
 
-## 💼 Industry Experience  
+## :briefcase: Industry Experience  
 
 ### 🎵 [Deezer](https://www.deezer.com/)  
-📍 *Paris, France :fr:*  
+*Paris, :fr:*  
 **Machine Learning Engineer Intern**  
-👨‍🏫 Supervised by [Théo Bontempelli](https://scholar.google.com/citations?user=7wlFpDwAAAAJ&hl)  
-📅 *Jun -- Nov 2024*  
-- 🚀 **Main mission:** **Modeling User Musical Tastes 🎧 using Transformers** in a **Large-Scale Environment**.  
+Supervised by [Théo Bontempelli](https://scholar.google.com/citations?user=7wlFpDwAAAAJ&hl)  
+*Jun -- Nov 2024*  
+-  **Main mission:** **Modeling User Musical Tastes using Transformers** in a **Large-Scale Environment**.  
 
 ### ☁️ [Wise Systems](https://www.wisesystems.com/)  
-📍 *Montreal, Canada :ca:*  
+*Montreal, :ca:*  
 **Cloud Engineer Intern**  
-📅 *Sep 2022 -- Feb 2023*  
-- ⚙️ **Main mission:** **CI/CD Improvements 🚀** of the **IaC (Infrastructure as Code)** Deployed with Terraform.  
+*Sep 2022 -- Feb 2023*  
+- **Main mission:** **CI/CD Improvements ** of the **IaC (Infrastructure as Code)** Deployed with Terraform.  
 
 ---
 <!-- 
