@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a graduate student in Computer Science at **Georgia Tech**, specializing in **NeuroAI** with a focus on **sequence modeling**. My research interests span across **time series transformers**, **state space models**, and their applications, including **music recommendation** and **neural decoding**. Prior to this, I graduated from UTC with a degree in Computer Science and gained experience working with large-scale datasets and applications in the industry at Deezer.
+I am a graduate student in Computer Science at **Georgia Tech**, specializing in **NeuroAI** with a focus on **sequence modeling**. My research interests span across **time series transformers**, **state space models**, and their applications, including **music recommendation** and **neural decoding**. Prior to this, I obtained a degree in computer science at Université de technologie de Compiègn and gained industry experience with large-scale datasets and applications as an intern at Deezer.
 
 ---
 
