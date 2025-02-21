@@ -21,7 +21,7 @@ I am a graduate student in Computer Science at **Georgia Tech**, specializing in
 ## :microscope: Research Experience
 :brain: **[NerDS Lab](https://dyerlab.gatech.edu/)**  
 **Graduate Research Assistant**, Atlanta :us:, *Spring 2025*  
-Main mission: Motor Neural Data Spiking Decoding.  
+Main mission: Motor Neural Data Spiking Decoding with Self-Supervised Learning.  
 *Supervised by [Prof. Eva L. Dyer](https://scholar.google.com/citations?user=Sb_jcHcAAAAJ&hl)*
 
 :round_pushpin: **[Heudiasyc Lab -- UMR-CNRS 7253](https://www.hds.utc.fr/en/)**  
