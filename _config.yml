@@ -23,9 +23,9 @@ repository               : "AlexandreAndr/profile"
 author:
   # Biographic information
   avatar           : "profile.jpg"
-  name             : "Alex"
+  name             : "Alexandre (Alex) ANDRE"
   pronouns         : # example: "she/her"  
-  bio              : "NeuroAI @NerDS Lab"
+  bio              : "NeuroAI @NerDS Lab & CS Grad @ GT"
   location         : "Atlanta, USA"
   employer         : "Georgia Tech"
   uri              : # URL
