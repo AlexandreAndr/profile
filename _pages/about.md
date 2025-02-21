@@ -13,10 +13,8 @@ I am a :mortar_board: CS graduate student pursuing a double master's degree at *
 ---
 
 ## :classical_building: Education  
-:mortar_board: **MSc in Computer Science**, Georgia Tech :us: *Jul 2025 (expected)*
-
+:mortar_board: **MSc in Computer Science**, Georgia Tech :us:, *Jul 2025 (expected)*
 :mortar_board: **MEng in Computer Science**, Université de technologie de Compiègne :fr:, *Feb 2025*  
-
 :airplane: **Visiting Student**, Politecnico di Milano :it:, *Feb -- Jul 2021*  
 
 ---
@@ -38,14 +36,11 @@ Supervised by [Prof. Julien Moreau](https://www.hds.utc.fr/~moreajul/dokuwiki/) 
 ## :briefcase: Industry Experience  
 
 ### 🎵 [Deezer](https://www.deezer.com/)  
-*Paris, :fr:*  
-**Machine Learning Engineer Intern**  
+**Machine Learning Engineer Intern**, Paris, :fr:, *Jun -- Nov 2024*  
 Supervised by [Théo Bontempelli](https://scholar.google.com/citations?user=7wlFpDwAAAAJ&hl)  
-*Jun -- Nov 2024*  
 -  **Main mission:** **Modeling User Musical Tastes using Transformers** in a **Large-Scale Environment**.  
 
 ### ☁️ [Wise Systems](https://www.wisesystems.com/)  
-*Montreal, :ca:*  
-**Cloud Engineer Intern**  
-*Sep 2022 -- Feb 2023*  
+**Cloud Engineer Intern**, Montreal, :ca:, *Sep 2022 -- Feb 2023*
+Supervised by [Clément Contini](https://www.linkedin.com/in/clement-contini/?locale=en_US)
 - **Main mission:** **CI/CD Improvements ** of the **IaC (Infrastructure as Code)** Deployed with Terraform.  
