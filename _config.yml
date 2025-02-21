@@ -26,8 +26,8 @@ author:
   name             : "Alex"
   pronouns         : # example: "she/her"  
   bio              : "NeuroAI @NerDS Lab"
-  location         : ":us: Atlanta, USA"
-  employer         : ":bee: Georgia Tech"
+  location         : "Atlanta, USA"
+  employer         : "Georgia Tech"
   uri              : # URL
   email            : "aandre8@gatech.org" 
 
