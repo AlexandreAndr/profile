@@ -10,6 +10,10 @@ redirect_from:
 I am a graduate student in Computer Science at **Georgia Tech**, specializing in **NeuroAI** with a focus on **sequence modeling**. My research interests span across **time series transformers**, **state space models**, and their applications, including **music recommendation** and **neural decoding**. Prior to this, I obtained a degree in Computer Science at Université de technologie de Compiègne and gained industry experience with large-scale datasets and applications as an intern at Deezer.
 
 ---
+## :newspaper: News 
+- **Feb 2025**: :mortar_board: Graduated from **UTC** -- Université de technologie de Compiègne
+
+---
 ## :classical_building: Education  
 :mortar_board: **MSc in Computer Science**, Georgia Tech :us:, *2025 (expected)*  
 :mortar_board: **MEng in Computer Science**, Université de technologie de Compiègne :fr:, *2025*  
