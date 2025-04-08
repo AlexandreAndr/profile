@@ -11,7 +11,7 @@ I am a graduate student in Computer Science at **Georgia Tech**, specializing in
 
 ---
 ## :newspaper: News 
-- **Feb 2025**: :mortar_board: Graduated from **UTC** -- Université de technologie de Compiègne
+:mortar_board: **Feb 2025**: Graduated from **UTC** -- Université de technologie de Compiègne
 
 ---
 ## :classical_building: Education  
