@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a graduate student in Computer Science at **Georgia Tech**, specializing in **NeuroAI** with a focus on **sequence modeling**. I’m a member of the NerDS Lab, where I have the privilege of being advised by Prof. Eva Dyer. My research interests span across **neuro foundation models**, **time series transformers**, **state space models**, and their applications, including **brain-computer interface (BCI)**  and **neural decoding**. Prior to this, I obtained a degree in Computer Science at Université de technologie de Compiègne and gained industry experience with large-scale datasets and applications as an intern at Deezer.
+I am a graduate student in Computer Science at **Georgia Tech**, specializing in **NeuroAI** with a focus on **sequence modeling**. I’m a member of the **[NerDS Lab](https://dyerlab.gatech.edu/)**, where I have the privilege of being advised by **[Prof. Eva L. Dyer](https://scholar.google.com/citations?user=Sb_jcHcAAAAJ&hl)**. My research interests span across **neuro foundation models**, **time series transformers**, **state space models**, and their applications, including **brain-computer interface (BCI)**  and **neural decoding**. Prior to this, I obtained a degree in Computer Science at Université de technologie de Compiègne and gained industry experience with large-scale datasets and applications as an intern at Deezer.
 
 ---
 ## :newspaper: News 
