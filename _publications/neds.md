@@ -7,5 +7,5 @@ date: 2025-05-01
 venue: 'ICML 2025'
 paperurl: 'https://arxiv.org/pdf/2504.08201'
 citation: 'Zhang, Y., Wang, Y., Azabou, M., Andre, A., Wang, Z., Lyu, H., The International Brain Laboratory, Dyer, E., Paninski, L., & Hurwitz, C. (2025). Neural Encoding and Decoding at Scale. *arXiv:2504.08201*.'
-category: conference
+category: conferences
 ---
