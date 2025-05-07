@@ -11,7 +11,8 @@ I am a graduate student in Computer Science at **Georgia Tech**, specializing in
 
 ---
 ## :newspaper: News 
-:mortar_board: **May 2025**: Graduated from **Georgia Tech**
+:page_facing_up: **May 2025**: Neural Encoding and Decoding at Scale (NEDS) spotlight at ICML  
+:mortar_board: **May 2025**: Graduated from **Georgia Tech**  
 :mortar_board: **Feb 2025**: Graduated from **UTC** -- Université de technologie de Compiègne
 
 ---
