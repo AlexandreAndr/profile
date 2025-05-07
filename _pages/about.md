@@ -11,11 +11,12 @@ I am a graduate student in Computer Science at **Georgia Tech**, specializing in
 
 ---
 ## :newspaper: News 
+:mortar_board: **May 2025**: Graduated from **Georgia Tech**
 :mortar_board: **Feb 2025**: Graduated from **UTC** -- Université de technologie de Compiègne
 
 ---
 ## :classical_building: Education  
-:mortar_board: **MSc in Computer Science**, Georgia Tech :us:, *2025 (expected)*  
+:mortar_board: **MSc in Computer Science**, Georgia Tech :us:, *2025*  
 :mortar_board: **MEng in Computer Science**, UTC -- Université de technologie de Compiègne :fr:, *2025*  
 :airplane: **Visiting Student**, Politecnico di Milano :it:, *Spring 2021*  
 
