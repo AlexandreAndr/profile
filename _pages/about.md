@@ -7,23 +7,25 @@ redirect_from:
   - /about.html
 ---
 
-I am a graduate student in Computer Science at **Georgia Tech**, specializing in **NeuroAI** with a focus on **sequence modeling**. I’m a member of the **[NerDS Lab](https://nerdslab.github.io/about.html)**, where I have the privilege of being advised by **[Prof. Eva Dyer](https://scholar.google.com/citations?user=Sb_jcHcAAAAJ&hl)**. My research interests span across **neuro foundation models**, **time series transformers**, **state space models**, and their applications, including **brain-computer interface** and **neural decoding**. Prior to this, I obtained a Master of Engineering in Computer Science at Université de technologie de Compiègne and gained industry experience with large-scale datasets and applications as an intern at Deezer.
+I am a PhD student in Computer & Information Science at **UPenn** specializing in **NeuroAI** with a focus on **sequence modeling**. I’m a member of the **[NerDS Lab](https://nerdslab.github.io/about.html)**, where I have the privilege of being advised by **[Prof. Eva Dyer](https://scholar.google.com/citations?user=Sb_jcHcAAAAJ&hl)**. My research interests span **neuro foundation models**, **time series transformers**, **state space models**, and their applications, including **brain-computer interface** and **neural decoding**. Prior to this, I obtained a Master of Science in Computer Science at **Georgia Tech** and a Master of Engineering in Computer Science at Université de Technologie de Compiègne. I also gained industry experience with large-scale datasets and applications as an intern at Deezer.
 
 ---
 ## :newspaper: News 
+🧑‍🎓 **Aug 2025**: Began PhD in at **UPenn**!  
 :page_facing_up: **May 2025**: [Neural Encoding and Decoding at Scale (NEDS)](https://arxiv.org/pdf/2504.08201) spotlight at ICML!  
 :mortar_board: **May 2025**: Graduated from **Georgia Tech**!  
-:mortar_board: **Feb 2025**: Graduated from **UTC** -- Université de technologie de Compiègne!
+:mortar_board: **Feb 2025**: Graduated from **UTC** -- Université de Technologie de Compiègne!
 
 ---
-## :classical_building: Education  
+## :classical_building: Education
+🧑‍🎓 **PhD in Computer & Information Science**, University of Pennsylvania :us:, *2025–Present*  
 :mortar_board: **MSc in Computer Science**, Georgia Tech :us:, *2025*  
-:mortar_board: **MEng in Computer Science**, UTC -- Université de technologie de Compiègne :fr:, *2025*  
+:mortar_board: **MEng in Computer Science**, UTC -- Université de Technologie de Compiègne :fr:, *2025*  
 :airplane: **Visiting Student**, Politecnico di Milano :it:, *Spring 2021*  
 
 ---
 ## :microscope: Research Experience
-:brain: **[NerDS Lab](https://dyerlab.gatech.edu/)**, **Graduate Research Assistant**, Atlanta :us:, *Spring 2025*  
+:brain: **[NerDS Lab](https://dyerlab.gatech.edu/)**, **Graduate Research Assistant**, Atlanta :us:, Since *Spring 2025*  
 Motor Neural Data Spiking Decoding with Self-Supervised Learning.  
 *Supervised by [Prof. Eva Dyer](https://scholar.google.com/citations?user=Sb_jcHcAAAAJ&hl)*
 
