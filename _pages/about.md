@@ -7,12 +7,13 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student in Computer & Information Science at **UPenn** specializing in **NeuroAI** with a focus on **sequence modeling**. I’m a member of the **[NerDS Lab](https://nerdslab.github.io/about.html)**, where I have the privilege of being advised by **[Prof. Eva Dyer](https://scholar.google.com/citations?user=Sb_jcHcAAAAJ&hl)**. My research interests span **neuro foundation models**, **time series transformers**, **state space models**, and their applications, including **brain-computer interface** and **neural decoding**. Prior to this, I obtained a Master of Science in Computer Science at **Georgia Tech** and a Master of Engineering in Computer Science at Université de Technologie de Compiègne. I also gained industry experience with large-scale datasets and applications as an intern at Deezer.
+I am a PhD student in Computer & Information Science at **UPenn** specializing in **NeuroAI** with a focus on **sequence modeling**. I’m a member of the **[NerDS Lab](https://nerdslab.github.io/about.html)**, where I have the privilege of being advised by **[Prof. Eva Dyer](https://scholar.google.com/citations?user=Sb_jcHcAAAAJ&hl)**. My research interests span **neuro foundation models**, **time series transformers**, **state space models**, and their applications, including **brain-computer interface** and **neural decoding**. Prior to this, I obtained a Master of Science in Computer Science at Georgia Tech and a Master of Engineering in Computer Science at Université de Technologie de Compiègne. I also gained industry experience with large-scale datasets and applications as an intern at Deezer.
 
 ---
 ## :newspaper: News 
-🧑‍🎓 **Aug 2025**: Began PhD in at **UPenn**!  
-:page_facing_up: **May 2025**: [Neural Encoding and Decoding at Scale (NEDS)](https://arxiv.org/pdf/2504.08201) spotlight at ICML!  
+:page_facing_up: **Sep 2025**: [Revealing Potential Biases in LLM-Based Recommender Systems in the Cold Start Setting](https://arxiv.org/pdf/2508.20401), co-author and oral at EARL (RecSys 2025)!
+🧑‍🎓 **Aug 2025**: Began PhD at **UPenn**!  
+:page_facing_up: **May 2025**: [Neural Encoding and Decoding at Scale (NEDS)](https://arxiv.org/pdf/2504.08201) Spotlight at ICML 2025!  
 :mortar_board: **May 2025**: Graduated from **Georgia Tech**!  
 :mortar_board: **Feb 2025**: Graduated from **UTC** -- Université de Technologie de Compiègne!
 
