@@ -11,9 +11,9 @@ I am a PhD student in Computer & Information Science at **UPenn** specializing i
 
 ---
 ## :newspaper: News 
-:page_facing_up: **Sep 2025**: [Revealing Potential Biases in LLM-Based Recommender Systems in the Cold Start Setting](https://arxiv.org/pdf/2508.20401), co-author and oral at EARL (RecSys 2025)!  
+:page_facing_up: **Sep 2025**: [Revealing Potential Biases in LLM-Based Recommender Systems in the Cold Start Setting](https://arxiv.org/pdf/2508.20401), **main author** and oral at EARL (RecSys 2025)!  
 🧑‍🎓 **Aug 2025**: Began PhD at **UPenn**!  
-:page_facing_up: **May 2025**: [Neural Encoding and Decoding at Scale (NEDS)](https://arxiv.org/pdf/2504.08201) Spotlight at ICML 2025!  
+:page_facing_up: **May 2025**: [Neural Encoding and Decoding at Scale (NEDS)](https://arxiv.org/pdf/2504.08201) spotlight at ICML 2025!  
 :mortar_board: **May 2025**: Graduated from **Georgia Tech**!  
 :mortar_board: **Feb 2025**: Graduated from **UTC** -- Université de Technologie de Compiègne!
 
@@ -43,3 +43,8 @@ User Modeling Leveraging Transformers in a Large-Scale Environment.
 :cloud: **[Wise Systems](https://www.wisesystems.com/)**, **Cloud Engineer Intern**, Montreal :canada:, *Fall 2022*  
 CI/CD Improvements of the Infrastructure as Code Deployed with Terraform.  
 *Supervised by [Clément Contini](https://www.linkedin.com/in/clement-contini/?locale=en_US)*
+
+---
+## :eyeglasses: Industry Experience
+-  **Foundation Models for the Brain and Body workshop** at NeurIPS 2025
+
