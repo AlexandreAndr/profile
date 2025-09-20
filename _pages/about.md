@@ -45,6 +45,6 @@ CI/CD Improvements of the Infrastructure as Code Deployed with Terraform.
 *Supervised by [Clément Contini](https://www.linkedin.com/in/clement-contini/?locale=en_US)*
 
 ---
-## :eyeglasses: Industry Experience
+## :eyeglasses: Reviewing
 -  **Foundation Models for the Brain and Body workshop** at NeurIPS 2025
 
