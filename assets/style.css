@@ -1,50 +1,435 @@
-:root{
-  --bg:#0b0f14; --card:#101826; --text:#e7eef8; --muted:#9fb0c3;
-  --link:#7cc4ff; --border:#203149; --shadow: 0 10px 30px rgba(0,0,0,.35);
-  --max: 980px; --r: 18px;
-}
-@media (prefers-color-scheme: light){
-  :root{ --bg:#f6f8fb; --card:#ffffff; --text:#0b1220; --muted:#54657a; --border:#dde6f2; --shadow:0 10px 30px rgba(10,30,60,.10); }
-}
-*{ box-sizing:border-box; }
-html,body{ margin:0; padding:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji"; }
-body{ background:var(--bg); color:var(--text); line-height:1.55; }
-a{ color:var(--link); text-decoration:none; }
-a:hover{ text-decoration:underline; }
+:root {
+  /* ===== Base Colors ===== */
+  /* We use a very light slate background so the white cards stand out */
+  --bg: #f8fafc;       
+  --card: #ffffff;
+  --text: #0f172a;     /* slate-900 */
+  --muted: #64748b;    /* slate-500 */
 
-.wrap{ max-width:var(--max); margin:0 auto; padding:28px 18px 60px; }
-.nav{
-  display:flex; gap:12px; align-items:center; justify-content:space-between;
-  padding:14px 16px; border:1px solid var(--border); border-radius:999px; background:rgba(255,255,255,.03);
-  position:sticky; top:12px; backdrop-filter: blur(10px);
-}
-.nav .links{ display:flex; gap:14px; flex-wrap:wrap; }
-.badge{ font-size:12px; color:var(--muted); border:1px solid var(--border); padding:6px 10px; border-radius:999px; }
+  /* ===== Accent Palette ===== */
+  --accent: #1e40af;   /* Primary Deep Blue */
+  --accent-2: #0f766e; /* Secondary Teal */ 
 
-.hero{ display:grid; grid-template-columns: 120px 1fr; gap:18px; margin-top:18px; }
-@media (max-width:560px){ .hero{ grid-template-columns:1fr; } }
-.avatar{
-  width:120px; height:120px; border-radius:24px; overflow:hidden; border:1px solid var(--border);
-  background:linear-gradient(135deg, rgba(124,196,255,.25), rgba(180,120,255,.20));
+  /* ===== UI Variables ===== */
+  --border: rgba(15, 23, 42, .08);
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+
+  --max: 1024px;   /* Slightly wider for the grid */
+  --r: 20px;       /* Modern rounded corners */
+
+  /* ===== Typography ===== */
+  --fs-0: 0.92rem;
+  --fs-1: 1rem;
+  --fs-2: 1.35rem;
+  --fs-3: 2.05rem;
+
+  --w-regular: 400;
+  --w-medium: 520;
+  --w-semibold: 650;
+  --w-bold: 750;
+
+  --lh-tight: 1.22;
+  --lh-normal: 1.6;
+  --lh-loose: 1.75;
+  --measure: 72ch;
+
+  --font-serif: ui-serif, "Charter", "Georgia", "Times New Roman", serif;
+}
+
+/* ===== Reset / Base ===== */
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0; padding: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: var(--fs-1);
+  line-height: var(--lh-normal);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===== Links ===== */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  background-image: linear-gradient(var(--accent), var(--accent));
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: background-size .2s ease, color .2s ease;
+}
+a:hover {
+  background-size: 100% 2px;
+  color: var(--accent-2);
+}
+
+.inline-icon {
+  height: 1.2em;            /* Scales relative to the font size (slightly larger than text) */
+  width: auto;              /* Maintains aspect ratio */
+  vertical-align: -0.25em;  /* Pushes it down slightly to sit on the text baseline */
+  margin-left: 2px;         /* Adds a tiny gap between text and icon */
+  display: inline-block;    /* Ensures it flows correctly with text */
+}
+
+/* ===== Page Wrapper ===== */
+.wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 24px 18px 64px;
+}
+
+
+/* ===== Navigation ===== */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 18px;
+  margin-bottom: 24px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 12px;
+  z-index: 100;
   box-shadow: var(--shadow);
 }
-.avatar img{ width:100%; height:100%; object-fit:cover; display:block; }
+.nav .links { display: flex; gap: 14px; flex-wrap: wrap; }
 
-.card{
-  background:var(--card); border:1px solid var(--border); border-radius:var(--r); padding:18px;
-  box-shadow: var(--shadow);
+/* ===== Badges ===== */
+.badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 12px; color: var(--muted);
+  padding: 5px 12px; border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(30, 64, 175, .05);
+  text-decoration: none; background-image: none;
 }
-h1{ font-size:28px; margin:0 0 6px; }
-h2{ font-size:18px; margin:18px 0 10px; }
-p{ margin:10px 0; color:var(--text); }
-.muted{ color:var(--muted); }
+.badge:hover { color: var(--muted); }
 
-.grid{ display:grid; grid-template-columns: 1fr 1fr; gap:16px; }
-@media (max-width:860px){ .grid{ grid-template-columns:1fr; } }
+/* ===== GRID LAYOUT (The Bento Box) ===== */
+.module-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 20px; /* Gap between cards */
+}
 
-.list{ margin:0; padding-left:18px; }
-hr{ border:0; border-top:1px solid var(--border); margin:18px 0; }
-.small{ font-size:13px; color:var(--muted); }
+/* Make certain cards span the full width */
+.full-width {
+  grid-column: 1 / -1;
+}
 
-.kv{ display:flex; flex-wrap:wrap; gap:10px; margin-top:10px; }
-.kv a{ border:1px solid var(--border); padding:8px 10px; border-radius:999px; background:rgba(255,255,255,.03); }
+/* On mobile, stack everything */
+@media (max-width: 800px) {
+  .module-grid { grid-template-columns: 1fr; }
+}
+
+/* ===== CARDS ===== */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 24px;
+  box-shadow: var(--shadow);
+  
+  /* Flex magic to organize content vertically */
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+}
+
+.card:hover {
+  border-color: rgba(30, 64, 175, .2);
+  transform: translateY(-1px);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+/* Typography inside cards */
+h1 {
+  font-size: var(--fs-3);
+  line-height: var(--lh-tight);
+  font-weight: var(--w-bold);
+  margin: 0 0 10px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin: 0 0 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+  font-weight: var(--w-semibold);
+}
+
+p { margin: 10px 0; max-width: var(--measure); }
+
+/* ===== Hero Section (Inside Card) ===== */
+.hero-banner {
+  display: grid; grid-template-columns: 120px 1fr;
+  gap: 24px; align-items: center;
+}
+@media (max-width: 600px) { .hero-banner { grid-template-columns: 1fr; } }
+
+.avatar img {
+  width: 120px; height: 120px; border-radius: 18px;
+  border: 1px solid var(--border); display: block; object-fit: cover;
+}
+.hero-sub { color: var(--muted); font-size: 15px; margin-bottom: 8px; }
+.hero-meta {
+  list-style: none; padding: 0; margin: 0 0 12px;
+  display: flex; gap: 8px; flex-wrap: wrap;
+}
+.hero-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.hero-actions a {
+  padding: 6px 12px; border-radius: 6px;
+  background: var(--text); color: white;
+  font-size: 13px; text-decoration: none; background-image: none;
+}
+.hero-actions a:hover { background: var(--accent); opacity: 0.9; }
+
+/* ===== Bio Text ===== */
+.bio-wide p { 
+    text-align: justify; 
+    hyphens: auto; 
+    line-height: 1.7; 
+
+    max-width: 100%; 
+    width: 100%;
+}
+
+/* ===== NEWS SCROLL WRAPPER ===== */
+.news-wrapper {
+
+    
+  /* Fills the card height */
+  flex: 1; 
+  display: flex; 
+  flex-direction: column;
+  min-height: 0; 
+  position: relative; 
+}
+
+/* --- DELETE THE OLD ::after (Bottom Fade) --- */
+.news-wrapper::after {
+  display: none; 
+}
+
+/* --- ADD THE NEW ::before (Top Fade) --- */
+.news-wrapper::before {
+  content: ""; 
+  position: absolute; 
+  top: 0; left: 0; right: 0;
+  
+  /* A subtle 40px fade from card color to transparent */
+  height: 40px; 
+  background: linear-gradient(to bottom, var(--card) 20%, transparent 100%);
+  
+  pointer-events: none; 
+  z-index: 5;
+}
+
+/* ===== NEWS LIST (The Scrolling Part) ===== */
+.news-scroll {
+  /* Grow to fill the available space */
+  flex-grow: 1; 
+  height: auto; 
+  
+  overflow-y: auto;
+  
+  /* Padding: Normal at bottom, added at top for the new fade */
+  padding-bottom: 20px; 
+  padding-top: 20px;    
+  
+  /* Hide scrollbar */
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+}
+.news-scroll::-webkit-scrollbar { 
+  display: none; 
+}
+
+
+/* News List Items */
+.news, .edu, .xp, .teach { list-style: none; padding: 0; margin: 0; }
+.news-item {
+  display: grid; grid-template-columns: 70px 1fr; gap: 12px;
+  padding: 12px 0; border-bottom: 1px dashed var(--border);
+}
+.news-item:last-child { border-bottom: none; padding-bottom: 30px; }
+.news-date { font-size: 12px; color: var(--muted); padding-top: 3px; font-weight: 500;}
+.news-title { font-weight: 600; font-size: 0.95rem; color: var(--text); display: block; line-height: 1.35; background-image: none; }
+.news-title:hover { color: var(--accent); text-decoration: underline; }
+.news-title-plain { font-weight: 600; font-size: 0.95rem; }
+.small { font-size: 0.85rem; color: var(--muted); margin-top: 2px; }
+
+/* ===== Education ===== */
+.edu-item { padding: 14px 0; border-bottom: 1px dashed var(--border); }
+.edu-item:last-child { border-bottom: none; }
+.edu-row { display: grid; grid-template-columns: 48px 1fr; gap: 16px; }
+.edu-logo { width: 48px; height: 48px; object-fit: contain; }
+.edu-top { display: flex; justify-content: space-between; align-items: baseline; }
+.edu-top strong { display: block; font-size: 0.95rem; }
+.edu-right { font-size: 12px; color: var(--muted); white-space: nowrap; }
+.edu-sub { font-size: 0.9rem; color: rgba(15,23,42,.8); margin-top: 2px; }
+
+/* ===== Inner Grids (Experience / Teaching) ===== */
+.inner-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 32px;
+}
+@media (max-width: 700px) { .inner-grid { grid-template-columns: 1fr; } }
+
+.xp-item { padding: 12px 0; border-bottom: 1px dashed var(--border); }
+.xp-item:last-child { border-bottom: none; }
+.xp-top { display: flex; justify-content: space-between; align-items: baseline; }
+.xp-time { font-size: 12px; color: var(--muted); }
+.xp-sub { display: flex; font-weight: 500; font-size: 0.9rem; margin-bottom: 4px; justify-content: space-between; align-items: baseline; width: 100%;}
+
+/* Teaching Styles */
+.teach li { padding: 10px 0; border-bottom: 1px dashed var(--border); }
+.teach li:last-child { border-bottom: none; }
+.teach-row { display: flex; justify-content: space-between; font-size: 0.9rem; }
+.teach-role { font-weight: 600; }
+.teach-venue { font-family: var(--font-serif); font-weight: bold; margin-top: 4px; }
+
+/* ===== Utilities ===== */
+.mt-16 { margin-top: 16px; }
+
+
+/* ================================
+   Publications Module
+   ================================ */
+
+/* Specific spacing for the publication cards */
+.pub {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  /* If nested inside another card, we remove the shadow/border to avoid visual clutter */
+  box-shadow: none;
+  border: 1px solid var(--border);
+  padding: 20px;
+}
+
+/* Serif font for the title to distinguish from standard news */
+.pub-title {
+  font-family: var(--font-serif);
+  font-size: 1.12rem;
+  line-height: 1.3;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 6px;
+  border: none; /* Override default h3 border */
+  padding: 0;
+}
+
+.pub-authors {
+  font-size: 0.90rem;
+  line-height: 1.5;
+  color: rgba(15, 23, 42, 0.9);
+}
+
+.pub-equal {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: -4px;
+  margin-bottom: 8px;
+}
+
+/* The vertical bar accent style */
+.pub-meta {
+  font-family: var(--font-serif);
+  font-size: 0.92rem;
+  line-height: 1.4;
+  color: var(--text);
+  margin: 8px 0;
+  padding-left: 12px;
+  border-left: 3px solid rgba(30, 64, 175, 0.4); /* Blue accent bar */
+}
+
+/* Keywords/Venues in bold */
+.pub-meta strong {
+  font-weight: 750;
+  color: var(--accent);
+}
+
+/* Button Links */
+.pub-links {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.pub-links a {
+  display: inline-flex;
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(30, 64, 175, 0.05);
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-decoration: none;
+  /* Remove the default underline animation for these buttons */
+  background-image: none; 
+}
+
+.pub-links a:hover {
+  background: rgba(30, 64, 175, 0.1);
+  color: var(--accent-2);
+  transform: translateY(-1px);
+}
+
+/* Abstract Dropdown */
+.pub details {
+  margin-top: 12px;
+  padding: 10px 14px;
+  background: rgba(15, 23, 42, 0.02); /* Very light gray box */
+  border-radius: 8px;
+  border: 1px solid rgba(15, 23, 42, 0.05);
+}
+
+.pub details summary {
+  list-style: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  user-select: none;
+}
+
+/* Remove default triangle */
+.pub details summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Custom arrow */
+.pub details summary::before {
+  content: "▸";
+  display: inline-block;
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+  color: var(--muted);
+}
+
+/* Rotate arrow when open */
+.pub details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.pub details p {
+  margin: 8px 0 0;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: rgba(15, 23, 42, 0.85);
+  text-align: justify;
+}

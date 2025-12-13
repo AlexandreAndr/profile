@@ -3,13 +3,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Alexandre (Alex) ANDRE — Bio</title>
+  <title>Alexandre Andre</title>
+
+  <meta name="description" content="Alexandre (Alex) ANDRE — PhD student in Computer & Information Science at UPenn." />
   <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="assets/favicon.ico" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 </head>
+
 <body>
   <div class="wrap">
+    
     <header class="nav">
-      <div class="badge">Alexandre (Alex) ANDRE</div>
+      <a class="badge" href="./index.html">🧠 Alex ANDRE</a>
       <nav class="links">
         <a href="./index.html" aria-current="page">About</a>
         <a href="./publications.html">Publications</a>
@@ -17,106 +26,222 @@
       </nav>
     </header>
 
-    <section class="hero">
-      <div class="avatar">
-        <!-- Put your portrait at assets/alexandre.jpg (or remove img to keep the gradient card) -->
-        <img src="assets/alexandre.jpg" alt="Alexandre (Alex) ANDRE" onerror="this.remove()" />
+    <main class="module-grid">
+      
+      <section class="card full-width">
+        <div class="hero-banner">
+          <div class="avatar">
+            <img src="assets/alexandre.jpg" alt="Alexandre Andre" loading="lazy" onerror="this.style.display='none'">
+          </div>
+          <div class="hero-title">
+            <h1>Alexandre (Alex) ANDRE</h1>
+            <div class="hero-sub">PhD @ UPenn · NeuroAI @ NerDS Lab</div>
+            
+            <div class="hero-actions">
+              <a href="mailto:your@email.com">Email</a>
+              <a href="https://scholar.google.com/" target="_blank">Scholar</a>
+              <a href="https://github.com/" target="_blank">GitHub</a>
+              <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card full-width">
+        <h2>👋 Bio</h2>
+        <div class="bio-wide">
+            <p>
+            I am a PhD student in Computer and Information Science at the University of Pennsylvania, specializing in Machine Learning with a focus on NeuroAI. I am a member of the amazing <a href="https://nerdslab.github.io/" target="_blank" rel="noopener noreferrer">NerDS Lab</a> and fortunate to be advised by <a href="https://scholar.google.com/citations?user=Sb_jcHcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Prof. Eva Dyer</a>. 
+            </p>
+            <p>
+            My research interests include neuro foundation models, multivariate time series forecasting, and self supervised learning, as well as their applications to brain-computer interfaces and neural decoding.
+            </p>
+            <p>
+            Prior to this, I earned an MSc and MEng in Computer Science from Georgia Tech and the Université de Technologie de Compiègne (France). I also gained industry experience working on large-scale recommendation systems as an intern at Deezer.
+            </p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>📰 News</h2>
+        <div class="news-wrapper">
+          <div class="news-scroll">
+            <ul class="news">
+              
+              <li class="news-item">
+                <div class="news-date">Dec 2025</div>
+                <div>
+                  <a class="news-title" href="#">📄 A Scalable Self-Supervised Method for Modeling Human Intracranial Recordings (Charmander <img src="assets/icons/charmader.png" class="inline-icon loading="lazy">)</a>
+                  <div class="small">BrainBody Workshop · NeurIPS 2025 · Spotlight</div>
+                </div>
+              </li>
+
+              <li class="news-item">
+                <div class="news-date">Sep 2025</div>
+                <div>
+                  <a class="news-title" href="#">📄 Revealing Potential Biases in LLM-Based Recommender Systems</a>
+                  <div class="small">Coauthor · EARL Workshop · RecSys 2025 · Oral</div>
+                </div>
+              </li>
+
+              <li class="news-item">
+                <div class="news-date">Aug 2025</div>
+                <div><span class="news-title-plain">📚 Began PhD at UPenn</span></div>
+              </li>
+
+              <li class="news-item">
+                <div class="news-date">May 2025</div>
+                <div>
+                  <a class="news-title" href="#">📄 Neural Encoding and Decoding at Scale (NEDS)</a>
+                  <div class="small">ICML 2025 · Spotlight</div>
+                </div>
+              </li>
+
+              <li class="news-item">
+                <div class="news-date">May 2025</div>
+                <div><span class="news-title-plain">📚 Graduated from Georgia Tech</span></div>
+              </li>
+
+              <li class="news-item">
+                <div class="news-date">Feb 2025</div>
+                <div><span class="news-title-plain">📚 Graduated from UTC France</span></div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>🎓 Education</h2>
+        <ul class="edu">
+          <li class="edu-item">
+            <div class="edu-row">
+              <img src="assets/icons/upenn.png" class="edu-logo" alt="UPenn" loading="lazy">
+              <div class="edu-text">
+                <div class="edu-top"><strong>University of Pennsylvania</strong> <span class="edu-right">Present</span></div>
+                <div class="edu-sub">PhD in Computer &amp Information Science</div>
+              </div>
+            </div>
+          </li>
+          <li class="edu-item">
+            <div class="edu-row">
+              <img src="assets/icons/gt.png" class="edu-logo" alt="GT" loading="lazy">
+              <div class="edu-text">
+                <div class="edu-top"><strong>Georgia Institute of Technology</strong> <span class="edu-right">2025</span></div>
+                <div class="edu-sub">MSc in Computer Science</div>
+              </div>
+            </div>
+          </li>
+          <li class="edu-item">
+            <div class="edu-row">
+              <img src="assets/icons/utc.png" class="edu-logo" alt="UTC" loading="lazy">
+              <div class="edu-text">
+                <div class="edu-top"><strong>University of Technology of Compiègne</strong> <span class="edu-right">2025</span></div>
+                <div class="edu-sub">MEng in Computer Science</div>
+              </div>
+            </div>
+          </li>
+          <li class="edu-item">
+            <div class="edu-row">
+              <img src="assets/icons/polimi.png" class="edu-logo" alt="Polimi" loading="lazy">
+              <div class="edu-text">
+                <div class="edu-top"><strong>Politecnico di Milano</strong> <span class="edu-right">2021</span></div>
+                <div class="edu-sub">Visiting Student</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="card full-width">
+        <div class="inner-grid">
+          <div>
+            <h2>🔬 Research Experience</h2>
+            <ul class="xp">
+              <li class="xp-item">
+                <div class="xp-top">
+                <a href="https://nerdslab.github.io/" target="_blank" rel="noopener noreferrer" class="xp-link">
+                    <strong>NerDS Lab</strong>
+                </a>
+                <span class="xp-time">2024 - Present</span>
+                </div>
+                <div class="xp-sub">Research Assistant <span class="xp-time">Atlanta/Philadephia, 🇺🇸</span></div>
+                <div class="small">Advised by Eva Dyer.</div>
+              </li>
+              <li class="xp-item">
+                <div class="xp-top">
+                <a href="https://www.hds.utc.fr/en/" target="_blank" rel="noopener noreferrer" class="xp-link">
+                    <strong>Heudiasyc Lab</strong>
+                </a>
+                <span class="xp-time">2023</span>
+                </div>
+                <div class="xp-sub">Research Assistant <span class="xp-time">Compiègne, 🇫🇷</span></div>
+                <div class="small">Weakly supervised localization.</div>
+              </li>
+            </ul>
+          </div>
+          
+          <div>
+            <h2>🏢 Industry Experience</h2>
+            <ul class="xp">
+              <li class="xp-item">
+                <div class="xp-top">
+                <a href="https://www.deezer.com/us/" target="_blank" rel="noopener noreferrer" class="xp-link">
+                    <strong>Deezer</strong>
+                </a>
+                <span class="xp-time">2024</span>
+                </div>
+                <div class="xp-sub">ML Engineer Intern <span class="xp-time">Paris, 🇫🇷</span></div>
+                <div class="small">Large-scale Transformers for user modeling.</div>
+              </li>
+              <li class="xp-item">
+                <div class="xp-top">
+                <a href="https://www.wisesystems.com" target="_blank" rel="noopener noreferrer" class="xp-link">
+                    <strong>Wise Systems</strong>
+                </a>
+                <span class="xp-time">2022</span>
+                </div>
+                <div class="xp-sub">Cloud Engineer Intern <span class="xp-time">Montreal, 🇨🇦</span></div>
+                <div class="small">Infrastructure-as-code & CI/CD.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="card full-width">
+        <div class="inner-grid">
+          <div>
+            <h2>🧑‍⚖️ Reviewing</h2>
+            <ul class="teach">
+              <li>
+                <div class="teach-row"><span class="teach-role">Computational and Systems Neuroscience (COSYNE)</span> <span class="teach-time">2026</span></div>
+              </li>
+              <li>
+                <div class="teach-row"><span class="teach-role">Foundation Models for the Brain and Body Workshop, NeurIPS</span> <span class="teach-time">2025</span></div>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2>🧑‍🏫 Teaching</h2>
+            <ul class="teach">
+              <li>
+                <div class="teach-row"><span class="teach-role">Teaching Assistant</span> <span class="teach-time">Fall 2025</span></div>
+                <div class="teach-venue">CIS 6250: Theory of ML</div>
+                <div class="small">University of Pennsylvania</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="full-width mt-16" style="text-align:center; color:var(--muted); font-size:0.85rem;">
+        © 2025 Alexandre ANDRE
       </div>
 
-      <div class="card">
-        <h1>Alexandre (Alex) ANDRE</h1>
-        <div class="muted">NeuroAI @ NerDS Lab · CS Grad @ GT</div>
-
-        <div class="kv">
-          <span class="badge">Atlanta, USA</span>
-          <span class="badge">Georgia Tech</span>
-          <!-- Replace # with your real links -->
-          <a href="mailto:YOUR_EMAIL">Email</a>
-          <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
-          <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="card" style="margin-top:16px">
-      <h2>Bio</h2>
-      <p>
-        I am a PhD student in Computer &amp; Information Science at UPenn specializing in NeuroAI with a focus on sequence modeling.
-        I’m a member of the <a href="https://nerdslab.github.io" target="_blank" rel="noopener">NerDS Lab</a>, advised by
-        <a href="https://scholar.google.com" target="_blank" rel="noopener">Prof. Eva Dyer</a>.
-        My research interests span neuro foundation models, time series transformers, state space models, and their applications,
-        including brain-computer interface and neural decoding.
-      </p>
-      <p>
-        Prior to this, I obtained a Master of Science in Computer Science at Georgia Tech and a Master of Engineering in Computer Science
-        at Université de Technologie de Compiègne. I also gained industry experience with large-scale datasets and applications as an intern at Deezer.
-      </p>
-
-      <hr />
-
-      <div class="grid">
-        <div>
-          <h2>News</h2>
-          <ul class="list">
-            <li>Dec 2025: <a href="https://openreview.net" target="_blank" rel="noopener">A scalable self-supervised method for modeling human intracranial recordings during natural behavior</a> — spotlight at Foundation Models for the Brain and Body workshop (NeurIPS 2025)</li>
-            <li>Sep 2025: <a href="https://arxiv.org" target="_blank" rel="noopener">Revealing Potential Biases in LLM-Based Recommender Systems in the Cold Start Setting</a> — main author and oral at EARL workshop (RecSys 2025)</li>
-            <li>Aug 2025: Began PhD at UPenn</li>
-            <li>May 2025: <a href="https://arxiv.org" target="_blank" rel="noopener">Neural Encoding and Decoding at Scale (NEDS)</a> — spotlight at ICML 2025</li>
-            <li>May 2025: Graduated from Georgia Tech</li>
-            <li>Feb 2025: Graduated from UTC – Université de Technologie de Compiègne</li>
-          </ul>
-        </div>
-
-        <div>
-          <h2>Education</h2>
-          <ul class="list">
-            <li>PhD in Computer &amp; Information Science, University of Pennsylvania (2025–Present)</li>
-            <li>MSc in Computer Science, Georgia Tech (2025)</li>
-            <li>MEng in Computer Science, UTC – Université de Technologie de Compiègne (2025)</li>
-            <li>Visiting Student, Politecnico di Milano (Spring 2021)</li>
-          </ul>
-        </div>
-      </div>
-
-      <hr />
-
-      <div class="grid">
-        <div>
-          <h2>Research Experience</h2>
-          <ul class="list">
-            <li><a href="https://dyerlab.gatech.edu" target="_blank" rel="noopener">NerDS Lab</a>, Graduate Research Assistant, Atlanta — Since Spring 2025<br/>
-              <span class="small">Motor Neural Data Spiking Decoding with Self-Supervised Learning. Supervised by Prof. Eva Dyer.</span>
-            </li>
-            <li><a href="https://www.hds.utc.fr" target="_blank" rel="noopener">Heudiasyc Lab</a>, Graduate Research Assistant, Compiègne — Fall 2023<br/>
-              <span class="small">Localization Prediction in a Weakly Supervised Setting. Supervised by Prof. Julien Moreau &amp; Prof. Philippe Xu.</span>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h2>Industry Experience</h2>
-          <ul class="list">
-            <li><a href="https://www.deezer.com" target="_blank" rel="noopener">Deezer</a>, Machine Learning Engineer Intern, Paris — Fall 2024<br/>
-              <span class="small">User Modeling leveraging transformers in a large-scale environment. Supervised by Théo Bontempelli.</span>
-            </li>
-            <li><a href="https://www.wisesystems.com" target="_blank" rel="noopener">Wise Systems</a>, Cloud Engineer Intern, Montreal — Fall 2022<br/>
-              <span class="small">CI/CD improvements of the infrastructure as code deployed with Terraform. Supervised by Clément Contini.</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <hr />
-
-      <h2>Reviewing</h2>
-      <ul class="list">
-        <li>Cosyne 2026</li>
-        <li>Foundation Models for the Brain and Body workshop at NeurIPS 2025</li>
-      </ul>
-
-      <p class="small" style="margin-top:16px">© 2025 Alexandre ANDRE</p>
-    </section>
+    </main>
   </div>
 </body>
 </html>
