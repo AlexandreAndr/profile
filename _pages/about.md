@@ -11,7 +11,8 @@ I am a PhD student in Computer & Information Science at **UPenn** specializing i
 
 ---
 ## :newspaper: News 
-:page_facing_up: **Sep 2025**: [Revealing Potential Biases in LLM-Based Recommender Systems in the Cold Start Setting](https://arxiv.org/pdf/2508.20401), **main author** and oral at EARL (RecSys 2025)!  
+:page_facing_up: **Dec 2025**: [A scalable self-supervised method for modeling human intracranial recordings during natural behavior](https://openreview.net/pdf?id=CdP8Y4K4fz) spotlight at Foundation Models for the Brain and Body workshop (NeurIPS 2025)!  
+:page_facing_up: **Sep 2025**: [Revealing Potential Biases in LLM-Based Recommender Systems in the Cold Start Setting](https://arxiv.org/pdf/2508.20401), **main author** and oral at EARL workshop (RecSys 2025)!  
 🧑‍🎓 **Aug 2025**: Began PhD at **UPenn**!  
 :page_facing_up: **May 2025**: [Neural Encoding and Decoding at Scale (NEDS)](https://arxiv.org/pdf/2504.08201) spotlight at ICML 2025!  
 :mortar_board: **May 2025**: Graduated from **Georgia Tech**!  
@@ -46,5 +47,6 @@ CI/CD Improvements of the Infrastructure as Code Deployed with Terraform.
 
 ---
 ## :eyeglasses: Reviewing
+-  **Cosyne** 2026
 -  **Foundation Models for the Brain and Body workshop** at NeurIPS 2025
 
