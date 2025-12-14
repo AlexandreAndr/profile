@@ -64,6 +64,7 @@ a:hover {
   color: var(--accent-2);
 }
 
+
 .inline-icon {
   height: 1.2em;            /* Scales relative to the font size (slightly larger than text) */
   width: auto;              /* Maintains aspect ratio */
@@ -99,6 +100,25 @@ a:hover {
 }
 .nav .links { display: flex; gap: 14px; flex-wrap: wrap; }
 
+
+/* ===== BIO WIDE ===== */
+.bio-wide {
+  /* 1. Justify the text so edges are straight */
+  text-align: justify;
+  
+  /* 2. Enable hyphenation to prevent ugly gaps */
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+/* CRITICAL FIX: Override the global text width limit */
+.bio-wide p {
+  max-width: 100%; /* Forces text to fill the entire card width */
+  margin-bottom: 16px;
+}
+
 /* ===== Badges ===== */
 .badge {
   display: inline-flex; align-items: center; gap: 6px;
@@ -132,7 +152,7 @@ a:hover {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--r);
-  padding: 24px;
+  padding: 18px;
   box-shadow: var(--shadow);
   
   /* Flex magic to organize content vertically */
@@ -184,72 +204,138 @@ p { margin: 10px 0; max-width: var(--measure); }
 .hero-meta {
   list-style: none; padding: 0; margin: 0 0 12px;
   display: flex; gap: 8px; flex-wrap: wrap;
+}/* Container */
+.hero-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 24px;
 }
-.hero-actions { display: flex; gap: 8px; flex-wrap: wrap; }
-.hero-actions a {
-  padding: 6px 12px; border-radius: 6px;
-  background: var(--text); color: white;
-  font-size: 13px; text-decoration: none; background-image: none;
+
+/* BUTTON STYLE */
+.icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* 1. Use system variables for consistency */
+  background-color: var(--card); 
+  color: var(--text); 
+  border: 1px solid var(--border); /* Adds the subtle border used elsewhere */
+  
+  /* 2. Shape & Size */
+  height: 60px;       
+  min-width: 60px;    
+  padding: 0 20px;    
+  border-radius: 50px; 
+  
+  /* 3. Make Icons BIG */
+  font-size: 2rem; 
+  
+  /* 4. Shadow */
+  box-shadow: var(--shadow); 
+  text-decoration: none;
+  
+  /* Remove the default link gradient background */
+  background-image: none; 
+  
+  transition: all 0.3s ease;
 }
-.hero-actions a:hover { background: var(--accent); opacity: 0.9; }
 
-/* ===== Bio Text ===== */
-.bio-wide p { 
-    text-align: justify; 
-    hyphens: auto; 
-    line-height: 1.7; 
+/* TEXT HIDDEN BY DEFAULT */
+.icon-btn span {
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  
+  font-size: 1rem;
+  font-weight: 600; /* Uses your semi-bold weight */
+  margin-left: 0;
+  
+  transition: all 0.3s ease;
+}
 
-    max-width: 100%; 
-    width: 100%;
+/* HOVER EFFECT */
+.icon-btn:hover {
+  /* Use a transparent version of your --accent (#1e40af) */
+  background-color: rgba(30, 64, 175, 0.08); 
+  
+  /* Use your main accent color for the text/icon */
+  color: var(--accent); 
+  
+  /* Match the border hover effect of your cards */
+  border-color: rgba(30, 64, 175, 0.2);
+  
+  transform: translateY(-3px); 
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); 
+}
+
+.icon-btn:hover span {
+  max-width: 150px; 
+  opacity: 1;
+  margin-left: 12px; 
 }
 
 /* ===== NEWS SCROLL WRAPPER ===== */
 .news-wrapper {
-
-    
-  /* Fills the card height */
   flex: 1; 
   display: flex; 
   flex-direction: column;
   min-height: 0; 
-  position: relative; 
+  position: relative; /* Essential for positioning the fades */
 }
 
-/* --- DELETE THE OLD ::after (Bottom Fade) --- */
-.news-wrapper::after {
-  display: none; 
-}
-
-/* --- ADD THE NEW ::before (Top Fade) --- */
+/* --- TOP FADE --- */
 .news-wrapper::before {
   content: ""; 
   position: absolute; 
   top: 0; left: 0; right: 0;
   
-  /* A subtle 40px fade from card color to transparent */
-  height: 40px; 
-  background: linear-gradient(to bottom, var(--card) 20%, transparent 100%);
+  /* Bigger height for the fade */
+  height: 30px; 
+  
+  /* Gradient starts opaque at the very top, then fades out quickly */
+  background: linear-gradient(to bottom, var(--card) 0%, transparent 100%);
   
   pointer-events: none; 
   z-index: 5;
 }
 
-/* ===== NEWS LIST (The Scrolling Part) ===== */
+/* --- BOTTOM FADE --- */
+.news-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  
+  /* Very large height for a smooth "infinite" look */
+  height: 100px; 
+  
+  background: linear-gradient(to bottom, transparent 0%, var(--card) 100%);
+  
+  pointer-events: none; 
+  z-index: 5;
+  display: block; 
+}
+
+
+/* ===== NEWS SCROLL ===== */
 .news-scroll {
-  /* Grow to fill the available space */
-  flex-grow: 1; 
-  height: auto; 
-  
+  max-height: 320px; 
   overflow-y: auto;
+  flex-grow: 1;
+  height: auto;
   
-  /* Padding: Normal at bottom, added at top for the new fade */
-  padding-bottom: 20px; 
-  padding-top: 20px;    
+  /* REMOVED PADDING: Content sits tight against the edges */
+  padding-top: 0;    
+  padding-bottom: 0; 
   
-  /* Hide scrollbar */
   scrollbar-width: none; 
   -ms-overflow-style: none;
+
+  padding-bottom: 10px; 
+  padding-top: 20px; 
 }
+
 .news-scroll::-webkit-scrollbar { 
   display: none; 
 }
@@ -263,9 +349,8 @@ p { margin: 10px 0; max-width: var(--measure); }
 }
 .news-item:last-child { border-bottom: none; padding-bottom: 30px; }
 .news-date { font-size: 12px; color: var(--muted); padding-top: 3px; font-weight: 500;}
-.news-title { font-weight: 600; font-size: 0.95rem; color: var(--text); display: block; line-height: 1.35; background-image: none; }
-.news-title:hover { color: var(--accent); text-decoration: underline; }
-.news-title-plain { font-weight: 600; font-size: 0.95rem; }
+
+.news-title { font-weight: 600; font-size: 0.95rem; }
 .small { font-size: 0.85rem; color: var(--muted); margin-top: 2px; }
 
 /* ===== Education ===== */
@@ -277,6 +362,39 @@ p { margin: 10px 0; max-width: var(--measure); }
 .edu-top strong { display: block; font-size: 0.95rem; }
 .edu-right { font-size: 12px; color: var(--muted); white-space: nowrap; }
 .edu-sub { font-size: 0.9rem; color: rgba(15,23,42,.8); margin-top: 2px; }
+
+/* ===== Reviewing List Styling ===== */
+.review-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.review-list li {
+  display: flex;
+  justify-content: space-between; /* Pushes the year to the right */
+  align-items: baseline;
+  
+  /* Smaller font size as requested */
+  font-size: 0.85rem; 
+  line-height: 1.4;
+  
+  padding: 6px 0; /* Tighter spacing than Teaching */
+  border-bottom: 1px dashed var(--border);
+}
+
+.review-list li:last-child {
+  border-bottom: none;
+}
+
+/* Style for the year */
+.review-year {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-left: 16px; /* Ensures gap between name and year */
+  white-space: nowrap; /* Prevents year from breaking onto new line */
+}
 
 /* ===== Inner Grids (Experience / Teaching) ===== */
 .inner-grid {
@@ -290,12 +408,62 @@ p { margin: 10px 0; max-width: var(--measure); }
 .xp-time { font-size: 12px; color: var(--muted); }
 .xp-sub { display: flex; font-weight: 500; font-size: 0.9rem; margin-bottom: 4px; justify-content: space-between; align-items: baseline; width: 100%;}
 
-/* Teaching Styles */
-.teach li { padding: 10px 0; border-bottom: 1px dashed var(--border); }
-.teach li:last-child { border-bottom: none; }
-.teach-row { display: flex; justify-content: space-between; font-size: 0.9rem; }
-.teach-role { font-weight: 600; }
-.teach-venue { font-family: var(--font-serif); font-weight: bold; margin-top: 4px; }
+/* Teaching Styles *//* ===== Teaching List Styling ===== */
+.teach {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.teach li {
+  /* Stacks the content vertically: Role -> Course -> Uni */
+  display: flex;
+  flex-direction: column;
+  gap: 3px; /* Small gap between the text lines */
+  
+  padding: 12px 0; 
+  border-bottom: 1px dashed var(--border);
+}
+
+.teach li:last-child {
+  border-bottom: none;
+}
+
+/* Row 1: Role (Left) & Date (Right) */
+.teach-row {
+  display: flex;
+  justify-content: space-between; /* Pushes Date to the far right */
+  align-items: baseline;
+  width: 100%;
+}
+
+.teach-role {
+  font-weight: 650; /* Semi-bold to make the role stand out */
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.teach-time {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-feature-settings: "tnum"; /* Tabular numbers for clean alignment */
+  white-space: nowrap;
+}
+
+/* Row 2: Course Name (The "Academic" visual cue) */
+.teach-venue {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  color: rgba(15, 23, 42, 0.9); /* Slightly softer than pure black */
+  margin-top: 1px;
+}
+
+/* Row 3: University Styling */
+.teach .small {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-style: italic; /* Distinctive style for the location */
+}
 
 /* ===== Utilities ===== */
 .mt-16 { margin-top: 16px; }
