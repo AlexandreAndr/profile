@@ -1,21 +1,20 @@
 :root {
   /* ===== Base Colors ===== */
-  /* We use a very light slate background so the white cards stand out */
-  --bg: #f8fafc;       
+  --bg: #f8fafc;
   --card: #ffffff;
   --text: #0f172a;     /* slate-900 */
   --muted: #64748b;    /* slate-500 */
 
   /* ===== Accent Palette ===== */
-  --accent: #1e40af;   /* Primary Deep Blue */
-  --accent-2: #0f766e; /* Secondary Teal */ 
+  --accent: #1e40af;   /* Deep Blue */
+  --accent-2: #0f766e; /* Teal */
 
   /* ===== UI Variables ===== */
   --border: rgba(15, 23, 42, .08);
   --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
 
-  --max: 1024px;   /* Slightly wider for the grid */
-  --r: 20px;       /* Modern rounded corners */
+  --max: 1024px;
+  --r: 20px;
 
   /* ===== Typography ===== */
   --fs-0: 0.92rem;
@@ -34,6 +33,16 @@
   --measure: 72ch;
 
   --font-serif: ui-serif, "Charter", "Georgia", "Times New Roman", serif;
+
+  /* ===== Typography Harmony Tokens ===== */
+  --text-2: rgba(15, 23, 42, 0.88);
+  --text-3: rgba(15, 23, 42, 0.72);
+  --muted-2: rgba(100, 116, 139, 0.85);
+
+  --fs-xs: 0.82rem;
+  --fs-sm: 0.9rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.15rem;
 }
 
 /* ===== Reset / Base ===== */
@@ -64,13 +73,58 @@ a:hover {
   color: var(--accent-2);
 }
 
+/* ===== Typography Harmony (global) ===== */
+p{
+  margin: 10px 0;
+  max-width: var(--measure);
+  color: var(--text-2);
+}
+
+strong{
+  font-weight: var(--w-semibold);
+  color: var(--text);
+}
+
+/* Helpers you use in HTML */
+.small{
+  font-size: var(--fs-sm);
+  color: var(--muted);
+  margin-top: 2px;
+}
+.muted{
+  color: var(--muted);
+  font-size: var(--fs-sm);
+}
+
+/* Headings */
+h1 {
+  font-size: var(--fs-3);
+  line-height: var(--lh-tight);
+  font-weight: var(--w-bold);
+  letter-spacing: -0.015em;
+  margin: 0 0 10px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin: 0 0 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+  font-weight: var(--w-semibold);
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
 
 .inline-icon {
-  height: 1.2em;            /* Scales relative to the font size (slightly larger than text) */
-  width: auto;              /* Maintains aspect ratio */
-  vertical-align: -0.25em;  /* Pushes it down slightly to sit on the text baseline */
-  margin-left: 2px;         /* Adds a tiny gap between text and icon */
-  display: inline-block;    /* Ensures it flows correctly with text */
+  height: 1.2em;
+  width: auto;
+  vertical-align: -0.25em;
+  margin-left: 2px;
+  display: inline-block;
 }
 
 /* ===== Page Wrapper ===== */
@@ -79,7 +133,6 @@ a:hover {
   margin: 0 auto;
   padding: 24px 18px 64px;
 }
-
 
 /* ===== Navigation ===== */
 .nav {
@@ -100,22 +153,16 @@ a:hover {
 }
 .nav .links { display: flex; gap: 14px; flex-wrap: wrap; }
 
-
 /* ===== BIO WIDE ===== */
 .bio-wide {
-  /* 1. Justify the text so edges are straight */
   text-align: justify;
-  
-  /* 2. Enable hyphenation to prevent ugly gaps */
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
 }
-
-/* CRITICAL FIX: Override the global text width limit */
 .bio-wide p {
-  max-width: 100%; /* Forces text to fill the entire card width */
+  max-width: 100%;
   margin-bottom: 16px;
 }
 
@@ -130,19 +177,13 @@ a:hover {
 }
 .badge:hover { color: var(--muted); }
 
-/* ===== GRID LAYOUT (The Bento Box) ===== */
+/* ===== GRID LAYOUT (Bento Box) ===== */
 .module-grid {
   display: grid;
   grid-template-columns: 1.3fr 1fr;
-  gap: 20px; /* Gap between cards */
+  gap: 20px;
 }
-
-/* Make certain cards span the full width */
-.full-width {
-  grid-column: 1 / -1;
-}
-
-/* On mobile, stack everything */
+.full-width { grid-column: 1 / -1; }
 @media (max-width: 800px) {
   .module-grid { grid-template-columns: 1fr; }
 }
@@ -154,11 +195,9 @@ a:hover {
   border-radius: var(--r);
   padding: 18px;
   box-shadow: var(--shadow);
-  
-  /* Flex magic to organize content vertically */
   display: flex;
   flex-direction: column;
-  height: 100%; 
+  height: 100%;
 }
 
 .card:hover {
@@ -166,28 +205,6 @@ a:hover {
   transform: translateY(-1px);
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
-
-/* Typography inside cards */
-h1 {
-  font-size: var(--fs-3);
-  line-height: var(--lh-tight);
-  font-weight: var(--w-bold);
-  margin: 0 0 10px;
-  background: linear-gradient(90deg, var(--accent), var(--accent-2));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-h2 {
-  font-size: 1.25rem;
-  margin: 0 0 16px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--border);
-  font-weight: var(--w-semibold);
-}
-
-p { margin: 10px 0; max-width: var(--measure); }
 
 /* ===== Hero Section (Inside Card) ===== */
 .hero-banner {
@@ -202,154 +219,126 @@ p { margin: 10px 0; max-width: var(--measure); }
 }
 .hero-sub { color: var(--muted); font-size: 18px; margin-bottom: 4px; }
 
-/* Container */
+/* Hero actions */
 .hero-actions {
   display: flex;
   gap: 15px;
   margin-top: 18px;
 }
 
-/* BUTTON STYLE */
+/* ===== Icon Buttons (Hero) ===== */
 .icon-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  /* 1. Use system variables for consistency */
-  background-color: var(--card); 
-  color: var(--text); 
-  border: 1px solid var(--border); /* Adds the subtle border used elsewhere */
-  
-  /* 2. Shape & Size */
-  height: 60px;       
-  min-width: 60px;    
-  padding: 0 20px;    
-  border-radius: 50px; 
-  
-  /* 3. Make Icons BIG */
-  font-size: 2rem; 
-  
-  /* 4. Shadow */
-  box-shadow: var(--shadow); 
+
+  background-color: var(--card);
+  color: var(--text);
+  border: 1px solid var(--border);
+
+  height: 60px;
+  min-width: 60px;
+  padding: 0 20px;
+  border-radius: 50px;
+
+  font-size: 2rem;
+  box-shadow: var(--shadow);
   text-decoration: none;
-  
-  /* Remove the default link gradient background */
-  background-image: none; 
-  
+
+  background-image: none;
   transition: all 0.3s ease;
 }
 
-/* TEXT HIDDEN BY DEFAULT */
 .icon-btn span {
   max-width: 0;
   opacity: 0;
   overflow: hidden;
-  white-space: wrap;
-  
+  white-space: nowrap; /* FIX: was invalid "wrap" */
   font-size: 1rem;
-  font-weight: 600; /* Uses your semi-bold weight */
+  font-weight: 600;
   margin-left: 0;
-  
   transition: all 0.3s ease;
 }
 
-/* HOVER EFFECT */
 .icon-btn:hover {
-  /* Use a transparent version of your --accent (#1e40af) */
-  background-color: rgba(30, 64, 175, 0.08); 
-  
-  /* Use your main accent color for the text/icon */
-  color: var(--accent); 
-  
-  /* Match the border hover effect of your cards */
+  background-color: rgba(30, 64, 175, 0.08);
+  color: var(--accent);
   border-color: rgba(30, 64, 175, 0.2);
-  
-  transform: translateY(-3px); 
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); 
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .icon-btn:hover span {
-  max-width: 150px; 
+  max-width: 150px;
   opacity: 1;
-  margin-left: 12px; 
+  margin-left: 12px;
 }
 
 /* ===== NEWS SCROLL WRAPPER ===== */
 .news-wrapper {
-  flex: 1; 
-  display: flex; 
+  flex: 1;
+  display: flex;
   flex-direction: column;
-  min-height: 0; 
-  position: relative; /* Essential for positioning the fades */
+  min-height: 0;
+  position: relative;
 }
 
-/* --- TOP FADE --- */
+/* Top fade */
 .news-wrapper::before {
-  content: ""; 
-  position: absolute; 
+  content: "";
+  position: absolute;
   top: 0; left: 0; right: 0;
-  
-  /* Bigger height for the fade */
-  height: 30px; 
-  
-  /* Gradient starts opaque at the very top, then fades out quickly */
+  height: 30px;
   background: linear-gradient(to bottom, var(--card) 0%, transparent 100%);
-  
-  pointer-events: none; 
+  pointer-events: none;
   z-index: 5;
 }
 
-/* --- BOTTOM FADE --- */
+/* Bottom fade */
 .news-wrapper::after {
   content: "";
   position: absolute;
   bottom: 0; left: 0; right: 0;
-  
-  /* Very large height for a smooth "infinite" look */
-  height: 100px; 
-  
+  height: 100px;
   background: linear-gradient(to bottom, transparent 0%, var(--card) 100%);
-  
-  pointer-events: none; 
+  pointer-events: none;
   z-index: 5;
-  display: block; 
+  display: block;
 }
 
-
-/* ===== NEWS SCROLL ===== */
+/* News scroll */
 .news-scroll {
-  max-height: 320px; 
+  max-height: 320px;
   overflow-y: auto;
   flex-grow: 1;
   height: auto;
-  
-  /* REMOVED PADDING: Content sits tight against the edges */
-  padding-top: 0;    
-  padding-bottom: 0; 
-  
-  scrollbar-width: none; 
+
+  scrollbar-width: none;
   -ms-overflow-style: none;
 
-  padding-bottom: 20px; 
-  padding-top: 20px; 
+  padding: 20px 0;
 }
+.news-scroll::-webkit-scrollbar { display: none; }
 
-.news-scroll::-webkit-scrollbar { 
-  display: none; 
-}
-
-
-/* News List Items */
+/* Lists */
 .news, .edu, .xp, .teach { list-style: none; padding: 0; margin: 0; }
+
 .news-item {
   display: grid; grid-template-columns: 70px 1fr; gap: 12px;
-  padding: 12px 0; border-bottom: 1px dashed var(--border);
+  padding: 12px 0;
+  border-bottom: 1px dashed var(--border);
 }
 .news-item:last-child { border-bottom: none; padding-bottom: 30px; }
-.news-date { font-size: 12px; color: var(--muted); padding-top: 3px; font-weight: 500;}
+
+.news-date {
+  font-size: var(--fs-xs);
+  color: var(--muted);
+  padding-top: 3px;
+  font-weight: 500;
+  font-feature-settings: "tnum";
+}
 
 .news-title { font-weight: 600; font-size: 0.95rem; }
-.small { font-size: 0.85rem; color: var(--muted); margin-top: 2px; }
 
 /* ===== Education ===== */
 .edu-item { padding: 14px 0; border-bottom: 1px dashed var(--border); }
@@ -358,84 +347,74 @@ p { margin: 10px 0; max-width: var(--measure); }
 .edu-logo { width: 48px; height: 48px; object-fit: contain; }
 .edu-top { display: flex; justify-content: space-between; align-items: baseline; }
 .edu-top strong { display: block; font-size: 0.95rem; }
-.edu-right { font-size: 12px; color: var(--muted); white-space: nowrap; }
+.edu-right { font-size: 12px; color: var(--muted); white-space: nowrap; font-feature-settings: "tnum"; }
 .edu-sub { font-size: 0.9rem; color: rgba(15,23,42,.8); margin-top: 2px; }
 
 /* ===== Reviewing List Styling ===== */
-.review-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+.review-list { list-style: none; padding: 0; margin: 0; }
 
 .review-list li {
   display: flex;
-  justify-content: space-between; /* Pushes the year to the right */
+  justify-content: space-between;
   align-items: baseline;
-  
-  /* Smaller font size as requested */
-  font-size: 0.85rem; 
+  font-size: 0.85rem;
   line-height: 1.4;
-  
-  padding: 6px 0; /* Tighter spacing than Teaching */
+  padding: 6px 0;
   border-bottom: 1px dashed var(--border);
 }
+.review-list li:last-child { border-bottom: none; }
 
-.review-list li:last-child {
-  border-bottom: none;
-}
-
-/* Style for the year */
 .review-year {
   color: var(--muted);
   font-size: 0.8rem;
   font-weight: 500;
-  margin-left: 16px; /* Ensures gap between name and year */
-  white-space: nowrap; /* Prevents year from breaking onto new line */
+  margin-left: 16px;
+  white-space: nowrap;
+  font-feature-settings: "tnum";
 }
 
 /* ===== Inner Grids (Experience / Teaching) ===== */
 .inner-grid {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
 }
 @media (max-width: 700px) { .inner-grid { grid-template-columns: 1fr; } }
 
 .xp-item { padding: 12px 0; border-bottom: 1px dashed var(--border); }
 .xp-item:last-child { border-bottom: none; }
 .xp-top { display: flex; justify-content: space-between; align-items: baseline; }
-.xp-time { font-size: 12px; color: var(--muted); }
-.xp-sub { display: flex; font-weight: 500; font-size: 0.9rem; margin-bottom: 4px; justify-content: space-between; align-items: baseline; width: 100%;}
-
-/* Teaching Styles *//* ===== Teaching List Styling ===== */
-.teach {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.xp-time { font-size: 12px; color: var(--muted); font-feature-settings: "tnum"; }
+.xp-sub {
+  display: flex;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
 }
+
+/* ===== Teaching ===== */
+.teach { list-style: none; padding: 0; margin: 0; }
 
 .teach li {
-  /* Stacks the content vertically: Role -> Course -> Uni */
   display: flex;
   flex-direction: column;
-  gap: 3px; /* Small gap between the text lines */
-  
+  gap: 3px;
   border-bottom: 1px dashed var(--border);
 }
+.teach li:last-child { border-bottom: none; }
 
-.teach li:last-child {
-  border-bottom: none;
-}
-
-/* Row 1: Role (Left) & Date (Right) */
 .teach-row {
   display: flex;
-  justify-content: space-between; /* Pushes Date to the far right */
+  justify-content: space-between;
   align-items: baseline;
   width: 100%;
 }
 
 .teach-role {
-  font-weight: 650; /* Semi-bold to make the role stand out */
+  font-weight: 650;
   font-size: 0.95rem;
   color: var(--text);
 }
@@ -443,91 +422,97 @@ p { margin: 10px 0; max-width: var(--measure); }
 .teach-time {
   font-size: 0.85rem;
   color: var(--muted);
-  font-feature-settings: "tnum"; /* Tabular numbers for clean alignment */
+  font-feature-settings: "tnum";
   white-space: nowrap;
 }
 
-/* Row 2: Course Name (The "Academic" visual cue) */
 .teach-venue {
-  font-family: var(--font-serif);
   font-size: 0.95rem;
-  color: rgba(15, 23, 42, 0.9); /* Slightly softer than pure black */
+  color: rgba(15, 23, 42, 0.9);
   margin-top: 1px;
+  letter-spacing: -0.01em;
 }
 
-/* Row 3: University Styling */
 .teach .small {
   font-size: 0.85rem;
   color: var(--muted);
-  font-style: italic; /* Distinctive style for the location */
+  font-style: italic;
 }
 
 /* ===== Utilities ===== */
 .mt-16 { margin-top: 16px; }
 
 /* ================================
-   Publications Module
+   Publications Module (clean, single)
    ================================ */
 
-/* ===== Year Header ===== */
-.year-header {
-  font-size: 1.5rem;
+/* Publication footnote */
+.pub-note{
+  margin-top: 24px;
+  font-size: var(--fs-xs);
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* Year header */
+.year-header{
+  font-size: 1.35rem;
   font-weight: 800;
   color: var(--muted);
   margin: 24px 0 12px;
-  opacity: 0.4;
+  opacity: 0.45;
 }
 
-/* ===== Publication Item ===== */
-.pub-item {
+/* Pub item */
+.pub-item{
   padding: 16px 0;
   border-bottom: 1px solid var(--border);
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
-.pub-item:last-child { border-bottom: none; }
+.pub-item:last-child{ border-bottom: none; }
 
 /* Title */
-.pub-title {
-  font-family: var(--font-serif);
+.pub-title{
   font-size: 1.05rem;
-  font-weight: 600;
+  font-weight: 650;
   margin: 0;
   color: var(--text);
-  line-height: 1.3;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
 }
 
 /* Authors */
-.pub-authors {
-  font-size: 0.9rem;
-  color: rgba(15, 23, 42, 0.85);
+.pub-authors{
+  font-size: var(--fs-sm);
+  color: var(--text-2);
 }
 
 /* Meta */
-.pub-meta {
-  font-size: 0.85rem;
+.pub-meta{
+  font-size: var(--fs-xs);
   color: var(--muted);
   border-left: 2px solid var(--accent);
   padding-left: 10px;
   margin: 4px 0;
 }
-.pub-meta strong {
+.pub-meta strong{
   color: var(--accent);
-  font-weight: 600;
+  font-weight: 650;
 }
 
-/* ===== Actions Row (Paper + Abstract) ===== */
-.pub-actions {
+/* Actions row */
+.pub-actions{
   display: flex;
   align-items: center;
   gap: 12px;
   margin-top: 8px;
-  flex-wrap: wrap; /* allows abstract panel to appear below */
+  flex-wrap: wrap;
 }
 
-/* --- Paper: expanding icon → pill --- */
-.pill-btn {
+/* Paper pill */
+.pill-btn{
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -557,18 +542,18 @@ p { margin: 10px 0; max-width: var(--measure); }
     box-shadow 0.2s ease;
 }
 
-.pill-btn i {
+.pill-btn i{
   font-size: 1.15rem;
   line-height: 1;
 }
 
-.pill-btn span {
+.pill-btn span{
   max-width: 0;
   opacity: 0;
   overflow: hidden;
   white-space: nowrap;
 
-  font-size: 0.82rem;
+  font-size: var(--fs-xs);
   font-weight: 650;
   margin-left: 0;
 
@@ -578,7 +563,7 @@ p { margin: 10px 0; max-width: var(--measure); }
     margin-left 0.25s ease;
 }
 
-.pill-btn:hover {
+.pill-btn:hover{
   width: 110px;
   justify-content: flex-start;
   padding: 0 12px;
@@ -587,31 +572,27 @@ p { margin: 10px 0; max-width: var(--measure); }
   border-color: rgba(30, 64, 175, 0.35);
 
   transform: translateY(-1px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.10);
 }
 
-.pill-btn:hover span {
+.pill-btn:hover span{
   max-width: 90px;
   opacity: 1;
   margin-left: 10px;
 }
 
-.pill-btn:focus-visible {
+.pill-btn:focus-visible{
   outline: 2px solid rgba(30, 64, 175, 0.35);
   outline-offset: 2px;
 }
 
-/* --- Abstract: summary inline in row, panel full-width below --- */
-.abstract-toggle { 
-  display: contents; /* key: summary stays inline, p can go full width */
-}
+/* Abstract: summary inline; panel full width below */
+.abstract-toggle{ display: contents; }
 
-.abstract-toggle summary {
-  list-style: none;
-}
-.abstract-toggle summary::-webkit-details-marker { display: none; }
+.abstract-toggle summary{ list-style: none; }
+.abstract-toggle summary::-webkit-details-marker{ display: none; }
 
-.abstract-toggle summary {
+.abstract-toggle summary{
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -623,19 +604,19 @@ p { margin: 10px 0; max-width: var(--measure); }
   cursor: pointer;
   user-select: none;
 
-  font-size: 0.9rem;
+  font-size: var(--fs-sm);
   font-weight: 650;
   color: var(--muted);
 
   transition: color 0.2s ease, background-color 0.2s ease;
 }
 
-.abstract-toggle summary:hover {
+.abstract-toggle summary:hover{
   color: var(--accent);
   background: rgba(30, 64, 175, 0.06);
 }
 
-.abstract-toggle summary::after {
+.abstract-toggle summary::after{
   content: "";
   width: 0.55em;
   height: 0.55em;
@@ -646,17 +627,15 @@ p { margin: 10px 0; max-width: var(--measure); }
   opacity: 0.9;
 }
 
-.abstract-toggle[open] summary::after {
-  transform: rotate(-135deg);
-}
+.abstract-toggle[open] summary::after{ transform: rotate(-135deg); }
 
-.abstract-toggle summary:focus-visible {
+.abstract-toggle summary:focus-visible{
   outline: 2px solid rgba(30, 64, 175, 0.35);
   outline-offset: 2px;
 }
 
 /* Abstract panel */
-.abstract-toggle p {
+.abstract-toggle p{
   display: block;
   width: 100%;
   max-width: none;
@@ -664,9 +643,9 @@ p { margin: 10px 0; max-width: var(--measure); }
   margin: 10px 0 0;
   padding: 12px 14px;
 
-  font-size: 0.92rem;
+  font-size: var(--fs-sm);
   line-height: 1.65;
-  color: var(--text);
+  color: var(--text-2);
 
   background: rgba(15, 23, 42, 0.03);
   border: 1px solid var(--border);
@@ -676,10 +655,10 @@ p { margin: 10px 0; max-width: var(--measure); }
 }
 
 /* Optional: subtle open animation */
-.abstract-toggle[open] p {
+.abstract-toggle[open] p{
   animation: abstractIn 0.18s ease-out;
 }
-@keyframes abstractIn {
-  from { opacity: 0; transform: translateY(-4px); }
-  to   { opacity: 1; transform: translateY(0); }
+@keyframes abstractIn{
+  from{ opacity: 0; transform: translateY(-4px); }
+  to{ opacity: 1; transform: translateY(0); }
 }
