@@ -3,11 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Alexandre Andre</title>
+  <title>Publications | Alexandre Andre</title>
   <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <div class="wrap">
+    
     <header class="nav">
       <div class="badge">🧠 Alex ANDRE</div>
       <nav class="links">
@@ -17,7 +19,7 @@
       </nav>
     </header>
 
-    <section class="card" style="margin-top:16px">
+    <section class="card full-width" style="margin-top:16px">
       <h1>Publications</h1>
       <p class="muted">
         You can also find my articles on
@@ -27,9 +29,9 @@
 
       <hr />
 
-    <h1>2025</h1>
+      <div class="year-header">2025</div>
 
-      <div class="card pub" style="margin-top:12px">
+      <div class="pub-item">
         <h3 class="pub-title">A Scalable Self-Supervised Method for Modeling Human Intracranial Recordings during Natural Behavior</h3>
 
         <div class="pub-authors">
@@ -38,69 +40,71 @@
           S. Shuvaev, E. Dyer
         </div>
 
-        <!-- <div class="pub-equal">* Equal contribution.</div> -->
-
         <div class="pub-meta">
           Foundation Models for the Brain and Body (<strong>BrainBody</strong>) Workshop, <strong>Spotlight</strong>,
           Neural Information Processing Systems (<strong>NeurIPS</strong>), 2025
         </div>
 
-        <div class="pub-links">
-          <a href="https://openreview.net/pdf?id=CdP8Y4K4fz" target="_blank" rel="noopener">Paper</a>
-        </div>
+        <div class="pub-row">
+          <a href="https://openreview.net/pdf?id=CdP8Y4K4fz" target="_blank" rel="noopener" class="pill-btn">
+            <i class="fa-regular fa-file-pdf"></i>
+            <span>Paper</span>
+          </a>
 
-        <!-- <details style="margin-top:10px">
-          <summary>Abstract</summary>
-          <p>
-            Understanding how the brain supports natural behavior is an increasingly central goal in human neuroscience.
-            Recordings from human neurosurgical patients with intracranial EEG electrodes offer direct access to widespread
-            brain electrical activity during a variety of behaviors over extended times. Despite the progress in the field,
-            utilizing these recordings at scale to identify the neural underpinnings of natural human behavior remains difficult
-            due to variability in electrode placement, channel geometry, and behavioral diversity across participants and sessions.
-            To address these challenges, we introduce a self-supervised framework for multi-participant intracranial neural data.
-            We use a Perceiver-based architecture to reconstruct masked channels of neural activity from unmasked channels using
-            learnable embeddings of the channel identity and contextual information, capturing inter-channel dependencies without
-            requiring labels. Finetuning of our self-supervised model has improved the decoding performance on a panel of downstream
-            tasks, highlighting the potential of self-supervised learning to enable general-purpose neural decoding and support
-            scalable integration of naturalistic human brain recordings.
-          </p>
-        </details> -->
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <p>
+              Understanding how the brain supports natural behavior is an increasingly central goal in human neuroscience.
+              Recordings from human neurosurgical patients with intracranial EEG electrodes offer direct access to widespread
+              brain electrical activity during a variety of behaviors over extended times. Despite the progress in the field,
+              utilizing these recordings at scale to identify the neural underpinnings of natural human behavior remains difficult
+              due to variability in electrode placement, channel geometry, and behavioral diversity across participants and sessions.
+              To address these challenges, we introduce a self-supervised framework for multi-participant intracranial neural data.
+              We use a Perceiver-based architecture to reconstruct masked channels of neural activity from unmasked channels using
+              learnable embeddings of the channel identity and contextual information, capturing inter-channel dependencies without
+              requiring labels. Finetuning of our self-supervised model has improved the decoding performance on a panel of downstream
+              tasks, highlighting the potential of self-supervised learning to enable general-purpose neural decoding and support
+              scalable integration of naturalistic human brain recordings.
+            </p>
+          </details>
+        </div>
       </div>
 
-      <div class="card pub" style="margin-top:12px">
+      <div class="pub-item">
         <h3 class="pub-title">Revealing Potential Biases in LLM-Based Recommender Systems in the Cold Start Setting</h3>
 
         <div class="pub-authors">
           <strong>A. Andre</strong>*, G. Roy*, E. Dyer, K. Wang
         </div>
 
-        <!-- <div class="pub-equal">* Equal contribution.</div> -->
-
         <div class="pub-meta">
           Evaluating and Applying Recommender Systems with Large Language Models (<strong>EARL</strong>) Workshop, <strong>Oral</strong>,
           ACM Conference on Recommender Systems (<strong>RecSys</strong>), 2025
         </div>
 
-        <div class="pub-links">
-          <a href="https://arxiv.org/pdf/2508.20401" target="_blank" rel="noopener">Paper</a>
-        </div>
+        <div class="pub-row">
+          <a href="https://arxiv.org/pdf/2508.20401" target="_blank" rel="noopener" class="pill-btn">
+            <i class="fa-regular fa-file-pdf"></i>
+            <span>Paper</span>
+          </a>
 
-        <!-- <details style="margin-top:10px">
-          <summary>Abstract</summary>
-          <p>
-            Large Language Models (LLMs) are increasingly used for recommendation tasks due to their general-purpose capabilities.
-            While LLMs perform well in rich-context settings, their behavior in cold-start scenarios, where only limited signals such
-            as age, gender, or language are available, raises fairness concerns because they may rely on societal biases encoded during
-            pretraining. We introduce a benchmark specifically designed to evaluate fairness in zero-context recommendation. Our modular
-            pipeline supports configurable recommendation domains and sensitive attributes, enabling systematic and flexible audits of
-            any open-source LLM. Through evaluations of state-of-the-art models (Gemma 3 and Llama 3.2), we uncover consistent biases
-            across recommendation domains (music, movies, and colleges) including gendered and cultural stereotypes. We also reveal a
-            non-linear relationship between model size and fairness, highlighting the need for nuanced analysis.
-          </p>
-        </details> -->
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <p>
+              Large Language Models (LLMs) are increasingly used for recommendation tasks due to their general-purpose capabilities.
+              While LLMs perform well in rich-context settings, their behavior in cold-start scenarios, where only limited signals such
+              as age, gender, or language are available, raises fairness concerns because they may rely on societal biases encoded during
+              pretraining. We introduce a benchmark specifically designed to evaluate fairness in zero-context recommendation. Our modular
+              pipeline supports configurable recommendation domains and sensitive attributes, enabling systematic and flexible audits of
+              any open-source LLM. Through evaluations of state-of-the-art models (Gemma 3 and Llama 3.2), we uncover consistent biases
+              across recommendation domains (music, movies, and colleges) including gendered and cultural stereotypes. We also reveal a
+              non-linear relationship between model size and fairness, highlighting the need for nuanced analysis.
+            </p>
+          </details>
+        </div>
       </div>
 
-      <div class="card pub" style="margin-top:12px">
+      <div class="pub-item">
         <h3 class="pub-title">Neural Encoding and Decoding at Scale</h3>
 
         <div class="pub-authors">
@@ -108,36 +112,37 @@
           The International Brain Laboratory, E. Dyer, L. Paninski, C. Hurwitz
         </div>
 
-        <!-- <div class="pub-equal">* Equal contribution.</div> -->
-
         <div class="pub-meta">
           International Conference on Machine Learning (<strong>ICML</strong>), <strong>Spotlight</strong>, 2025
         </div>
 
-        <div class="pub-links">
-          <a href="https://arxiv.org/pdf/2504.08201" target="_blank" rel="noopener">Paper</a>
+        <div class="pub-row">
+          <a href="https://arxiv.org/pdf/2504.08201" target="_blank" rel="noopener" class="pill-btn">
+            <i class="fa-regular fa-file-pdf"></i>
+            <span>Paper</span>
+          </a>
+
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <p>
+              Recent work has demonstrated that large-scale, multi-animal models are powerful tools for characterizing the relationship
+              between neural activity and behavior. Current large-scale approaches, however, focus exclusively on either predicting neural
+              activity from behavior (encoding) or predicting behavior from neural activity (decoding), limiting their ability to capture the
+              bidirectional relationship between neural activity and behavior. To bridge this gap, we introduce a multimodal, multi-task model
+              that enables simultaneous Neural Encoding and Decoding at Scale (NEDS). Central to our approach is a novel multi-task-masking
+              strategy, which alternates between neural, behavioral, within-modality, and cross-modality masking. We pretrain our method on the
+              International Brain Laboratory (IBL) repeated site dataset, which includes recordings from 83 animals performing the same visual
+              decision-making task. In comparison to other large-scale models, we demonstrate that NEDS achieves state-of-the-art performance for
+              both encoding and decoding when pretrained on multi-animal data and then fine-tuned on new animals. Surprisingly, NEDS's learned
+              embeddings exhibit emergent properties: even without explicit training, they are highly predictive of the brain regions in each
+              recording. Altogether, our approach is a step towards a foundation model of the brain that enables seamless translation between
+              neural activity and behavior.
+            </p>
+          </details>
         </div>
-<!-- 
-        <details style="margin-top:10px">
-          <summary>Abstract</summary>
-          <p>
-            Recent work has demonstrated that large-scale, multi-animal models are powerful tools for characterizing the relationship
-            between neural activity and behavior. Current large-scale approaches, however, focus exclusively on either predicting neural
-            activity from behavior (encoding) or predicting behavior from neural activity (decoding), limiting their ability to capture the
-            bidirectional relationship between neural activity and behavior. To bridge this gap, we introduce a multimodal, multi-task model
-            that enables simultaneous Neural Encoding and Decoding at Scale (NEDS). Central to our approach is a novel multi-task-masking
-            strategy, which alternates between neural, behavioral, within-modality, and cross-modality masking. We pretrain our method on the
-            International Brain Laboratory (IBL) repeated site dataset, which includes recordings from 83 animals performing the same visual
-            decision-making task. In comparison to other large-scale models, we demonstrate that NEDS achieves state-of-the-art performance for
-            both encoding and decoding when pretrained on multi-animal data and then fine-tuned on new animals. Surprisingly, NEDS's learned
-            embeddings exhibit emergent properties: even without explicit training, they are highly predictive of the brain regions in each
-            recording. Altogether, our approach is a step towards a foundation model of the brain that enables seamless translation between
-            neural activity and behavior.
-          </p>
-        </details> -->
       </div>
 
-      <p class="small" style="margin-top:16px">© 2025 Alexandre ANDRE</p>
+      <p class="small" style="margin-top:24px">© 2025 Alexandre ANDRE</p>
     </section>
   </div>
 </body>
