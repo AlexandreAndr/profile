@@ -1,16 +1,16 @@
 :root {
-  /* ===== Base Colors ===== */
+  /* ===== Base ===== */
   --bg: #f8fafc;
   --card: #ffffff;
-  --text: #0f172a;     /* slate-900 */
-  --muted: #64748b;    /* slate-500 */
 
-  /* ===== Accent Palette ===== */
-  --accent: #1e40af;   /* Deep Blue */
-  --accent-2: #0f766e; /* Teal */
+  --text: #0b1220;          /* near-black blue */
+  --muted: #5b6478;         /* slate blue-gray */
 
-  /* ===== UI Variables ===== */
-  --border: rgba(15, 23, 42, .08);
+  /* ===== Accent ===== */
+  --accent: #1c3faa;        /* deep academic blue */
+  --accent-2: #162c6b;      /* darker blue for gradients / hover */
+
+  --border: rgba(11, 18, 32, 0.08);
   --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
 
   --max: 1024px;
@@ -44,6 +44,17 @@
   --fs-md: 1rem;
   --fs-lg: 1.15rem;
 }
+
+.icon-bicolor-soft {
+  background: linear-gradient(
+    135deg,
+    var(--accent) 0%,
+    rgba(28, 63, 170, 0.55) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 /* ===== Reset / Base ===== */
 * { box-sizing: border-box; }
@@ -119,6 +130,16 @@ h2 {
   color: var(--text);
 }
 
+h2 i,
+.news-title i,
+.news-title-plain i,
+.badge i {
+  margin-right: 6px;
+  font-size: 0.95em;
+  vertical-align: -0.1em;
+  color: var(--accent);
+}
+
 .inline-icon {
   height: 1.2em;
   width: auto;
@@ -167,15 +188,36 @@ h2 {
 }
 
 /* ===== Badges ===== */
+/* ===== Clean badge (no box) ===== */
 .badge {
-  display: inline-flex; align-items: center; gap: 6px;
-  font-size: 12px; color: var(--muted);
-  padding: 5px 12px; border-radius: 999px;
-  border: 1px solid var(--border);
-  background: rgba(30, 64, 175, .05);
-  text-decoration: none; background-image: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+
+  padding: 0;              /* remove pill padding */
+  border: none;            /* remove border */
+  background: none;        /* remove background */
+  border-radius: 0;
+
+  text-decoration: none;
+  background-image: none;
+
+  transition: color 0.2s ease;
 }
-.badge:hover { color: var(--muted); }
+
+.badge i {
+  color: var(--accent);
+  font-size: 1rem;
+}
+
+/* Subtle hover — text emphasis, no box */
+.badge:hover {
+  color: var(--accent);
+}
 
 /* ===== GRID LAYOUT (Bento Box) ===== */
 .module-grid {
@@ -308,7 +350,7 @@ h2 {
 
 /* News scroll */
 .news-scroll {
-  max-height: 320px;
+  max-height: 300px;
   overflow-y: auto;
   flex-grow: 1;
   height: auto;
@@ -316,7 +358,7 @@ h2 {
   scrollbar-width: none;
   -ms-overflow-style: none;
 
-  padding: 20px 0;
+  padding: 10px 0px 30px;
 }
 .news-scroll::-webkit-scrollbar { display: none; }
 
@@ -346,7 +388,7 @@ h2 {
 .edu-row { display: grid; grid-template-columns: 48px 1fr; gap: 16px; }
 .edu-logo { width: 48px; height: 48px; object-fit: contain; }
 .edu-top { display: flex; justify-content: space-between; align-items: baseline; }
-.edu-top strong { display: block; font-size: 0.95rem; }
+.edu-top strong { display: block; font-size: 0.90rem; }
 .edu-right { font-size: 12px; color: var(--muted); white-space: nowrap; font-feature-settings: "tnum"; }
 .edu-sub { font-size: 0.9rem; color: rgba(15,23,42,.8); margin-top: 2px; }
 
@@ -458,7 +500,7 @@ h2 {
 .year-header{
   font-size: 1.35rem;
   font-weight: 800;
-  color: var(--muted);
+  color: var(--accent-2);
   margin: 24px 0 12px;
   opacity: 0.45;
 }
