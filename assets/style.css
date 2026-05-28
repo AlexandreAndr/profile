@@ -1,6 +1,6 @@
 :root {
   /* ===== Base ===== */
-  --bg: #f8fafc;
+  --bg: #f9f9f9;
   --card: #ffffff;
 
   --text: #0b1220;          /* near-black blue */
@@ -10,8 +10,8 @@
   --accent: #1c3faa;        /* deep academic blue */
   --accent-2: #162c6b;      /* darker blue for gradients / hover */
 
-  --border: rgba(11, 18, 32, 0.08);
-  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --border: rgba(11, 18, 32, 0.04);
+  --shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.03);
 
   --max: 1024px;
   --r: 20px;
@@ -111,14 +111,12 @@ strong{
 h1 {
   font-size: var(--fs-3);
   line-height: var(--lh-tight);
-  font-weight: var(--w-bold);
+  font-weight: 600;
   letter-spacing: -0.015em;
   margin: 0 0 10px;
-  background: linear-gradient(90deg, var(--accent), var(--accent-2));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
 }
+.name-1 { color: #3D6ABF; }
+.name-2 { color: #C2D9F5; }
 
 h2 {
   font-size: 1.25rem;
@@ -248,24 +246,69 @@ h2 i,
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
+.card-hero { border-radius: 40px; padding: 12px 24px 12px 12px; }
+@media (max-width: 600px) { .card-hero { border-radius: 24px; } }
+
 /* ===== Hero Section (Inside Card) ===== */
 .hero-banner {
-  display: grid; grid-template-columns: 120px 1fr;
-  gap: 24px; align-items: center;
+  display: grid; grid-template-columns: 108px 1fr;
+  gap: 36px; align-items: center;
 }
-@media (max-width: 600px) { .hero-banner { grid-template-columns: 1fr; } }
+@media (max-width: 600px) {
+  .hero-banner {
+    grid-template-columns: 80px 1fr;
+    gap: 16px;
+  }
+}
 
 .avatar img {
-  width: 120px; height: 120px; border-radius: 18px;
-  border: 1px solid var(--border); display: block; object-fit: cover;
+  width: 108px; height: 108px; border-radius: 30px;
+  border: 2px solid rgba(11, 18, 32, 0.15); display: block; object-fit: cover;
 }
-.hero-sub { color: var(--muted); font-size: 18px; margin-bottom: 4px; }
+@media (max-width: 600px) {
+  .avatar img { width: 80px; height: 80px; border-radius: 20px; }
+}
+.hero-sub { color: var(--muted); font-size: 21px; margin-bottom: 4px; }
 
-/* Hero actions */
+/* Hero actions (legacy, unused) */
 .hero-actions {
   display: flex;
   gap: 15px;
   margin-top: 18px;
+}
+
+/* Two-column layout */
+.col-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.col-right {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+/* Hero top wrapper */
+.hero-top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Hero actions bar (outside hero card) */
+.hero-actions-bar {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-left: 4px;
+}
+
+.hero-actions-bar .icon-btn {
+  height: 44px;
+  min-width: 66px;
+  font-size: 1.4rem;
 }
 
 /* ===== Icon Buttons (Hero) ===== */
@@ -350,15 +393,20 @@ h2 i,
 
 /* News scroll */
 .news-scroll {
-  max-height: 300px;
   overflow-y: auto;
-  flex-grow: 1;
-  height: auto;
+  flex: 1 1 0;
+  min-height: 0;
 
   scrollbar-width: none;
   -ms-overflow-style: none;
 
   padding: 10px 0px 30px;
+}
+@media (max-width: 800px) {
+  .col-right { min-height: 420px; }
+  .news-scroll { max-height: 380px; }
+  h1 { font-size: 1.6rem; }
+  .hero-sub { font-size: 16px; }
 }
 .news-scroll::-webkit-scrollbar { display: none; }
 
@@ -383,8 +431,11 @@ h2 i,
 .news-title { font-weight: 600; font-size: 0.95rem; }
 
 /* ===== Education ===== */
+.edu { display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; }
+@media (max-width: 600px) { .edu { grid-template-columns: 1fr; } }
 .edu-item { padding: 14px 0; border-bottom: 1px dashed var(--border); }
 .edu-item:last-child { border-bottom: none; }
+.edu-item:nth-last-child(2):nth-child(odd) { border-bottom: none; }
 .edu-row { display: grid; grid-template-columns: 48px 1fr; gap: 16px; }
 .edu-logo { width: 48px; height: 48px; object-fit: contain; }
 .edu-top { display: flex; justify-content: space-between; align-items: baseline; }
