@@ -34,7 +34,36 @@
       </p>
 
       <div class="year-header">2026</div>
-      
+
+      <div class="pub-item">
+        <h3 class="pub-title">
+          BrainWideBench: Benchmarking large-scale pretraining and across-animal transfer in multi-region neural recordings</h3>
+
+        <div class="pub-authors">
+          <strong>A. Andre</strong>, S. Mahato, V. Arora, K. Balaji, D. Lachi, N. Krishna, J. Xiao, Y. Zhang,
+          X. Mao, W. Ma, H. Yu, The International Brain Laboratory, B. Richards, G. Lajoie, C. Hurwitz,
+          M. Azabou, M. Whiteway, L. Paninski, E. Dyer
+        </div>
+
+        <div class="pub-meta">
+          <strong>Preprint</strong>, 2026
+        </div>
+
+        <div class="pub-row">
+          <a href="https://arxiv.org/pdf/2609.22064" target="_blank" rel="noopener" class="pill-btn">
+            <i class="fa-regular fa-file-pdf icon-bicolor-soft"></i>
+            <span>Paper</span>
+          </a>
+
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <p>
+              Advances in large-scale neural recording have made it possible to collect data across many animals and distributed brain regions, raising the question of whether this scale can be exploited to learn general-purpose neural representations transferable across diverse downstream tasks. Yet, progress toward this goal has been limited by fragmented evaluation protocols and a narrow focus on individual task domains. Here, we present BrainWideBench, a benchmark for evaluating across-animal transfer on multi-region neural recordings, built on the International Brain Laboratory Brainwide Map dataset of neural and behavioral recordings spanning 276 brain regions from 139 mice performing a sensory-guided decision-making task. The benchmark is organized around three complementary task suites that evaluate whether learned representations support downstream decoding of behavior, can predict masked or future neural activity, and can recover biologically meaningful anatomical organization. With this benchmark, we systematically evaluate pretraining methods across transfer settings, including finetuning on downstream objectives and zero-shot generalization to unseen animals. Our results confirm pretraining improves performance over matched single-session baselines, but we show current methods exhibit heterogeneity in transfer capabilities: gains depend strongly on the alignment between pretraining objectives and downstream tasks. No single approach performs uniformly well across all three suites, and most methods are designed to only address a subset of them. Together, these findings suggest that learning representations that jointly generalize across behavior, dynamics, and anatomy remains an open challenge. By providing a unified and reproducible evaluation suite, BrainWideBench establishes a framework for measuring progress toward general-purpose models of the mouse brain.
+            </p>
+          </details>
+        </div>
+      </div>
+
       <div class="pub-item">
         <h3 class="pub-title">
           PRISM: A hierarchical multiscale approach for time series forecasting</h3>
