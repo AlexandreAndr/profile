@@ -116,7 +116,7 @@ h1 {
   margin: 0 0 10px;
 }
 .name-1 { color: #3D6ABF; }
-.name-2 { color: #C2D9F5; }
+.name-2 { color: #7FA1DA; }
 
 h2 {
   font-size: 1.25rem;
@@ -674,12 +674,20 @@ h2 i,
   margin-left: 10px;
 }
 
+.pill-btn.pill-md:hover{
+  width: 128px;
+}
+
+.pill-btn.pill-md:hover span{
+  max-width: 108px;
+}
+
 .pill-btn.pill-wide:hover{
-  width: 170px;
+  width: 148px;
 }
 
 .pill-btn.pill-wide:hover span{
-  max-width: 150px;
+  max-width: 128px;
 }
 
 .pill-btn:focus-visible{
