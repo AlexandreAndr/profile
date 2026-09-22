@@ -596,7 +596,8 @@ h2 i,
 }
 
 /* Actions row */
-.pub-actions{
+.pub-actions,
+.pub-row{
   display: flex;
   align-items: center;
   gap: 12px;
