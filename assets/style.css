@@ -674,6 +674,14 @@ h2 i,
   margin-left: 10px;
 }
 
+.pill-btn.pill-wide:hover{
+  width: 170px;
+}
+
+.pill-btn.pill-wide:hover span{
+  max-width: 150px;
+}
+
 .pill-btn:focus-visible{
   outline: 2px solid rgba(30, 64, 175, 0.35);
   outline-offset: 2px;
