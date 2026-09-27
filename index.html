@@ -6,7 +6,7 @@
   <title>Alexandre Andre</title>
   <meta name="description" content="Alexandre (Alex) Andre — PhD student at the University of Pennsylvania working at the intersection of deep learning and neuroscience." />
   <meta property="og:title" content="Alexandre Andre" />
-  <meta property="og:description" content="PhD student at Penn · deep learning × neuroscience" />
+  <meta property="og:description" content="PhD student at Penn · Deep learning × Neuroscience" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -70,8 +70,8 @@
       animation: shift 12s ease-in-out infinite;
     }
     @keyframes shift { 50% { background-position: 100% 0; } }
-    .role { color: var(--muted); font-size: 18px; }
-    .note { color: var(--c2); font-size: 15px; margin-top: 6px; opacity: 0; transform: translateY(4px); transition: opacity .6s ease .5s, transform .6s ease .5s; }
+    .role { color: var(--muted); font-size: 18px; margin-top: 8px; }
+    .note { color: var(--c2); font-size: 15px; margin-top: 0; opacity: 0; transform: translateY(4px); transition: opacity .6s ease .5s, transform .6s ease .5s; }
     h1.folded ~ .note { opacity: 1; transform: none; }
 
     .links { display: flex; flex-wrap: wrap; gap: 6px 22px; margin: 0 0 44px; font-weight: 500; }
@@ -113,7 +113,6 @@
     ul { list-style: none; margin: 0; padding: 0; }
     .news li { display: grid; grid-template-columns: 84px 1fr; gap: 12px; }
     .news li + li, .news .rest ul { margin-top: 10px; }
-    .news time { color: var(--muted); font-size: 14.5px; padding-top: 1px; font-variant-numeric: tabular-nums; }
 
     .pubs li + li, .pubs .rest ul { margin-top: 20px; }
     .pubs a { display: block; }
@@ -172,11 +171,10 @@
     /* News · Timeline + Labels: year labels, month, coloured type tag */
     .news li { display: grid; grid-template-columns: 40px 1fr; gap: 12px; align-items: baseline; }
     .news li + li, .news .rest ul { margin-top: 12px; }
-    .news li.yr { display: block; margin-top: 28px; font-weight: 700; font-size: 15px; letter-spacing: -0.01em;
-      background: linear-gradient(90deg, var(--c1), var(--c3)); -webkit-background-clip: text; background-clip: text; color: transparent; width: fit-content; }
+    .news li.yr { display: block; margin-top: 28px; font-weight: 700; font-size: 15px; letter-spacing: -0.01em; color: var(--fg); }
     .news ul:first-child li.yr:first-child { margin-top: 0; }
     .news li.yr + li { margin-top: 10px; }
-    .news time { font-size: 14px; color: var(--muted); }
+    .news time { font-size: 14px; color: var(--fg); font-variant-numeric: tabular-nums; }
     .news .kind { display: inline-block; margin-right: 8px; padding: 0 8px; border-radius: 6px; font-size: 12px; font-weight: 600;
       color: var(--k); background: color-mix(in srgb, var(--k) 12%, transparent); vertical-align: 1px; transition: background .2s ease; }
     .news li:hover .kind { background: color-mix(in srgb, var(--k) 22%, transparent); }
@@ -251,8 +249,8 @@
       <img class="me-photo" src="assets/alexandre-480.jpg" alt="Photo of Alexandre Andre" />
       <div class="who">
       <h1 aria-label="Alexandre Andre, Alex for short">Alexandre Andre</h1>
-      <div class="role">PhD student at Penn · deep learning × neuroscience</div>
       <div class="note">Alexandre on paper, Alex in person.</div>
+      <div class="role">PhD student at Penn · Deep learning × Neuroscience</div>
       </div>
     </header>
 
