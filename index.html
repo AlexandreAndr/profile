@@ -118,14 +118,10 @@
     .pubs li + li, .pubs .rest ul { margin-top: 20px; }
     .pubs a { display: block; }
     .pubs .t { font-weight: 500; font-size: 17px; transition: color .2s ease; }
-    .pubs .t::after { content: " →"; display: inline-block; opacity: 0; transform: translateX(-6px); transition: opacity .2s ease, transform .2s ease; color: var(--c1); }
     .pubs a:hover .t, .pubs a:focus-visible .t { color: var(--c1); }
-    .pubs a:hover .t::after, .pubs a:focus-visible .t::after { opacity: 1; transform: none; }
     /* Pinned title: same item-link behaviour as the paper list */
     .pinned > a .t { transition: color .2s ease; }
-    .pinned > a .t::after { content: " →"; display: inline-block; opacity: 0; transform: translateX(-6px); transition: opacity .2s ease, transform .2s ease; color: var(--c1); }
     .pinned > a:hover .t, .pinned > a:focus-visible .t { color: var(--c1); }
-    .pinned > a:hover .t::after, .pinned > a:focus-visible .t::after { opacity: 1; transform: none; }
     .pubs .m { color: var(--muted); font-size: 14.5px; margin-top: 2px; }
     .tag { display: inline-block; font-size: 12px; font-weight: 500; padding: 1px 8px; border-radius: 999px; margin-left: 6px; vertical-align: 1px; color: var(--c); background: color-mix(in srgb, var(--c) 12%, transparent); }
     .tag-first { --c: var(--c1); }
