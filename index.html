@@ -210,6 +210,8 @@
     }
     @keyframes swapIn { from { opacity: 0; } }
     @media (prefers-reduced-motion: reduce) { .m .vf { animation: none !important; } }
+    /* Paper whose details are in the side panel stays highlighted */
+    @media (min-width: 1200px) { .pubs li.is-shown .t, .pinned.is-shown > a .t { color: var(--c1); } }
     .side .sv { font-style: italic; font-size: 13.5px; margin-bottom: 10px; }
     .side .hint { font-style: italic; opacity: .7; }
     .side .body { transition: opacity .2s ease; }
@@ -502,20 +504,18 @@
       const papers = document.getElementById("papers");
       papers.insertAdjacentHTML("afterbegin", `<aside class="side" aria-hidden="true"><div class="lbl">Details</div><div class="body"><div class="hint">Hover a paper to see its venue and authors.</div></div></aside>`);
       const side = papers.querySelector(".side"), body = side.querySelector(".body");
-      const label = side.querySelector(".lbl");
-      const pinnedEl = papers.querySelector(".pinned[data-authors]");
+      // Hover a paper (pinned included) to show its details; they stay until another paper is hovered
       let current = null;
       const fill = (el) => {
-        label.textContent = el && el === pinnedEl ? "Pinned" : "Details";
         body.innerHTML = el ? `<div class="st">${esc(el.dataset.title)}</div><div class="sv">${esc(el.dataset.venue)}</div>${authorsHTML(el.dataset.authors.split(", "))}` : `<div class="hint">Hover a paper to see its venue and authors.</div>`;
       };
       const show = (el) => {
-        if (el === current) return; current = el;
+        if (el === current) return;
+        if (current) current.classList.remove("is-shown");
+        current = el; el.classList.add("is-shown");
         side.classList.add("swap");
         setTimeout(() => { fill(el); side.classList.remove("swap"); }, 150);
       };
-      current = pinnedEl; fill(pinnedEl);   // BrainWideBench (the pinned paper) by default
-      papers.addEventListener("mouseleave", () => show(pinnedEl));
       papers.addEventListener("mouseover", (e) => { const li = e.target.closest("[data-authors]"); if (li && li.dataset.authors) show(li); });
       papers.addEventListener("focusin", (e) => { const li = e.target.closest("[data-authors]"); if (li && li.dataset.authors) show(li); });
     })();
