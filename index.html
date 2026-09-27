@@ -81,7 +81,7 @@
       background: linear-gradient(90deg, var(--c1), var(--c3));
       transform: scaleX(0); transform-origin: left; transition: transform .25s ease;
     }
-    .links a:hover::after { transform: scaleX(1); }
+    .links a:hover::after, .links a:focus-visible::after { transform: scaleX(1); }
 
     /* Segmented tabs with a sliding colored pill */
     .tabs { position: relative; display: inline-flex; padding: 4px; border-radius: 999px; background: var(--track); margin-bottom: 28px; }
@@ -101,23 +101,31 @@
     .panel[hidden] { display: none; }
 
     p { margin: 0 0 14px; font-size: 17px; }
-    p a { color: var(--c1); font-weight: 500; }
-    p a:hover { color: var(--c2); }
+    /* Text links (bio, contact line, news): blue, with the header's sliding gradient underline */
+    p a, .news a {
+      color: var(--c1); font-weight: 500; padding-bottom: 1px;
+      background: linear-gradient(90deg, var(--c1), var(--c3)) no-repeat 0 100% / 0 2px;
+      transition: background-size .25s ease;
+    }
+    p a:hover, p a:focus-visible, .news a:hover, .news a:focus-visible { background-size: 100% 2px; }
     .prev { color: var(--muted); font-size: 16px; }
 
     ul { list-style: none; margin: 0; padding: 0; }
     .news li { display: grid; grid-template-columns: 84px 1fr; gap: 12px; }
     .news li + li, .news .rest ul { margin-top: 10px; }
     .news time { color: var(--muted); font-size: 14.5px; padding-top: 1px; font-variant-numeric: tabular-nums; }
-    .news a { color: var(--c1); }
-    .news a:hover { color: var(--c2); }
 
     .pubs li + li, .pubs .rest ul { margin-top: 20px; }
     .pubs a { display: block; }
     .pubs .t { font-weight: 500; font-size: 17px; transition: color .2s ease; }
     .pubs .t::after { content: " →"; display: inline-block; opacity: 0; transform: translateX(-6px); transition: opacity .2s ease, transform .2s ease; color: var(--c1); }
-    .pubs a:hover .t { color: var(--c1); }
-    .pubs a:hover .t::after { opacity: 1; transform: none; }
+    .pubs a:hover .t, .pubs a:focus-visible .t { color: var(--c1); }
+    .pubs a:hover .t::after, .pubs a:focus-visible .t::after { opacity: 1; transform: none; }
+    /* Pinned title: same item-link behaviour as the paper list */
+    .pinned > a .t { transition: color .2s ease; }
+    .pinned > a .t::after { content: " →"; display: inline-block; opacity: 0; transform: translateX(-6px); transition: opacity .2s ease, transform .2s ease; color: var(--c1); }
+    .pinned > a:hover .t, .pinned > a:focus-visible .t { color: var(--c1); }
+    .pinned > a:hover .t::after, .pinned > a:focus-visible .t::after { opacity: 1; transform: none; }
     .pubs .m { color: var(--muted); font-size: 14.5px; margin-top: 2px; }
     .tag { display: inline-block; font-size: 12px; font-weight: 500; padding: 1px 8px; border-radius: 999px; margin-left: 6px; vertical-align: 1px; color: var(--c); background: color-mix(in srgb, var(--c) 12%, transparent); }
     .tag-first { --c: var(--c1); }
@@ -173,8 +181,6 @@
     .news ul:first-child li.yr:first-child { margin-top: 0; }
     .news li.yr + li { margin-top: 10px; }
     .news time { font-size: 14px; color: var(--muted); }
-    .news a { color: var(--c1); font-weight: 500; }
-    .news a:hover { color: var(--c2); text-decoration: underline; text-underline-offset: 3px; }
     .news .kind { display: inline-block; margin-right: 8px; padding: 0 8px; border-radius: 6px; font-size: 12px; font-weight: 600;
       color: var(--k); background: color-mix(in srgb, var(--k) 12%, transparent); vertical-align: 1px; transition: background .2s ease; }
     .news li:hover .kind { background: color-mix(in srgb, var(--k) 22%, transparent); }
@@ -238,7 +244,6 @@
 
     /* Contact line · Plain */
     #about .cta { color: var(--muted); font-size: 16px; margin-top: 4px; }
-    #about .cta a { font-weight: 500; }
   </style>
 </head>
 <body>
