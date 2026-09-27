@@ -450,7 +450,9 @@
       place(t);
       read();
       if (focus) t.focus();
-      history.replaceState(null, "", "#" + t.getAttribute("aria-controls"));
+      // The default tab (About) keeps a clean URL; other tabs get #news / #papers so they can be shared
+      const id = t.getAttribute("aria-controls");
+      history.replaceState(null, "", t === tabs[0] ? location.pathname + location.search : "#" + id);
     };
     tabs.forEach((t, i) => {
       t.addEventListener("click", () => select(t));
@@ -462,6 +464,11 @@
     const initial = tabs.find((t) => "#" + t.getAttribute("aria-controls") === location.hash) || tabs[0];
     pill.style.transition = "none";
     select(initial);
+    // Always open at the top (name first), even when the URL is #about / #news / #papers,
+    // which would otherwise make the browser jump down to that section.
+    if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+    scrollTo(0, 0);
+    addEventListener("load", () => scrollTo(0, 0));
     requestAnimationFrame(() => (pill.style.transition = ""));
     document.fonts && document.fonts.ready.then(() => place(tabs.find((t) => t.getAttribute("aria-selected") === "true")));
 
