@@ -1,0 +1,2 @@
+# CV sources: separate repo, cloned by `make cv`
+/cv/
