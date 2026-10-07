@@ -246,7 +246,7 @@
   <div class="glow" aria-hidden="true"></div>
   <main>
     <header class="in with-photo">
-      <img class="me-photo" src="assets/alexandre-480.jpg" alt="Photo of Alexandre Andre" />
+      <img class="me-photo" src="assets/alexandre-portrait.jpg" alt="Photo of Alexandre Andre" />
       <div class="who">
       <h1 aria-label="Alexandre Andre, Alex for short">Alexandre Andre</h1>
       <div class="note">Alexandre on paper, Alex in person.</div>
@@ -304,7 +304,7 @@
     //  EDIT HERE — one line per item, newest first.
     //  News:   { date, type?, text, link? }  type: Paper | Talk | Milestone
     //          Wrap the words to link in [brackets]: "Released [BrainWideBench], a benchmark…" (uses `link`)
-    //          Several links in one item: "[Paper title](https://…), oral at X ([slides](assets/….pdf))."
+    //          Several links in one item: "[Paper title](https://…), oral at X ([slides](assets/talks/….pdf))."
     //          Several tags: type: ["Paper", "Talk"]
     //          Talk format: "Talk title, venue ([slides])."
     //  Papers: { authors, title, venue, venueFull?, first?, link, tag? }  (* equal contribution, † co-supervision)
@@ -314,12 +314,13 @@
     //  How many show before "Show all" is set by data-visible above.
     // ============================================================
     const NEWS = [
-      { date: "Sep 2026", type: "Talk", text: "Measuring Progress in Neuro Foundation Models with BrainWideBench, ARNI retreat ([slides]).", link: "assets/ARNI_Retreat_2026_Talk.pdf" },
+      { date: "Oct 2026", type: "Talk", text: "Measuring Progress in Neuro Foundation Models with BrainWideBench, IBL lab meeting ([slides]).", link: "assets/talks/IBL_Lab_Meeting_Talk_2026.pdf" },
+      { date: "Sep 2026", type: "Talk", text: "Measuring Progress in Neuro Foundation Models with BrainWideBench, ARNI retreat ([slides]).", link: "assets/talks/ARNI_Retreat_2026_Talk.pdf" },
       { date: "Sep 2026", type: "Paper", text: "Released [BrainWideBench], a benchmark for pretraining and across-animal transfer on brain-wide recordings.", link: "https://brainbench-org.github.io/ibl-bwb-project/" },
-      { date: "Jun 2026", type: "Talk", text: "Building Neuro Foundation Models with torch_brain, NeuroDataReHack at HHMI Janelia ([slides]).", link: "assets/NeuroFMNeuroDataReHack2026.pdf" },
+      { date: "Jun 2026", type: "Talk", text: "Building Neuro Foundation Models with torch_brain, NeuroDataReHack at HHMI Janelia ([slides]).", link: "assets/talks/NeuroFMNeuroDataReHack2026.pdf" },
       { date: "May 2026", type: "Paper", text: "Olfactory cortex paper accepted in [Current Biology].", link: "https://doi.org/10.1016/j.cub.2026.04.069" },
       { date: "Dec 2025", type: "Paper", text: "[Charmander] (SSL on iEEG) at the NeurIPS BrainBodyFM workshop.", link: "https://openreview.net/pdf?id=CdP8Y4K4fz" },
-      { date: "Sep 2025", type: ["Paper", "Talk"], text: "Biases in LLM-Based Recommender Systems, RecSys EARL workshop ([paper](https://arxiv.org/pdf/2508.20401), [slides](assets/EARL_2025.pdf))." },
+      { date: "Sep 2025", type: ["Paper", "Talk"], text: "Biases in LLM-Based Recommender Systems, RecSys EARL workshop ([paper](https://arxiv.org/pdf/2508.20401), [slides](assets/talks/EARL_2025.pdf))." },
       { date: "Aug 2025", type: "Milestone", text: "Started my PhD at Penn." },
       { date: "May 2025", type: "Paper", text: "[NEDS] (neural encoding & decoding at scale) at ICML.", link: "https://arxiv.org/pdf/2504.08201" },
     ];
